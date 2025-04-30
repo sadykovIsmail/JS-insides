@@ -1,0 +1,1 @@
+/* 1) .style.display = "none"; // Hide options        .style.display = "block"; // Show reset button    */
