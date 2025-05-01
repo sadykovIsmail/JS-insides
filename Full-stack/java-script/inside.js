@@ -217,5 +217,6 @@ static method	Function that belongs to the class
 static property	Variable that belongs to the class
 46) destructuring const Object	{ name } = obj	by property name
 Array const	[first, second] = arr	by position 
-47)Pure Functions 
+47)Pure Functions not changes impure changes outside
+48)
 */
