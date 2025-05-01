@@ -218,5 +218,7 @@ static property	Variable that belongs to the class
 46) destructuring const Object	{ name } = obj	by property name
 Array const	[first, second] = arr	by position 
 47)Pure Functions not changes impure changes outside
-48)
+48)const curriedAdd = a => b => a + b;
+console.log(curriedAdd(3)(4)); // 7     Currying function
+
 */
