@@ -220,6 +220,6 @@ Array const	[first, second] = arr	by position
 47)Pure Functions not changes impure changes outside
 48)const curriedAdd = a => b => a + b;
 console.log(curriedAdd(3)(4)); // 7     Currying function
-49)
+49)h
 
 */
