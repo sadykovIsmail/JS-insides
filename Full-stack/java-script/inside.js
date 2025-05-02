@@ -15,7 +15,7 @@ cancelAnimationFrame(id) Making smooth animations
 animation.pause();      // stop
 animation.play();       // resume
 animation.reverse();    // go backwards
-animation.cancel();     // stop and rese
+animation.cancel();     // stop and reset
 // it is animating in js instead of css
   5)canvas we need to open to html 
 // 1. fillRect(x, y, width, height)
