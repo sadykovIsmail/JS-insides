@@ -13,7 +13,7 @@ cancelAnimationFrame(id) Making smooth animations
 }
 ..], {...});
 animation.pause();      // stop
-animation.play();       // resum
+animation.play();       // resume
 animation.reverse();    // go backwards
 animation.cancel();     // stop and reset
 // it is animating in js instead of css
