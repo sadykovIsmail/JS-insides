@@ -12,7 +12,7 @@ cancelAnimationFrame(id) Making smooth animations
   easing: 'ease-in-out'
 }
 ..], {...});
-animation.pause();      // sto
+animation.pause();      // stop
 animation.play();       // resume
 animation.reverse();    // go backwards
 animation.cancel();     // stop and reset
