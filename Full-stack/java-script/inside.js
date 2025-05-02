@@ -8,7 +8,7 @@ console.log("This runs after 2 seconds");
 cancelAnimationFrame(id) Making smooth animations
  4) const animation = box.animate([.{
   duration: 1000, // 1 second
-  iterations: 2,  // repeat 2 time
+  iterations: 2,  // repeat 2 times
   easing: 'ease-in-out'
 }
 ..], {...});
