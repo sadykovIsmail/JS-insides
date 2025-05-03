@@ -220,6 +220,12 @@ Array const	[first, second] = arr	by position
 47)Pure Functions not changes impure changes outside
 48)const curriedAdd = a => b => a + b;
 console.log(curriedAdd(3)(4)); // 7     Currying function
-49)
-
+49)Synchronous (Blocking) Asynchronous (Non-blocking)
+50) new Promise is giving success or failure
+resolve() → call this when the operation is successful
+reject() → call this when it failed
+.then() → what to do if it succeeds
+.catch() → what to do if it fails
+async	Marks a function to be asynchronous
+await	Wait for the promise inside an async function
 */
