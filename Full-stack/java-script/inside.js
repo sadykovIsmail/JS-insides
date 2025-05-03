@@ -228,4 +228,7 @@ reject() → call this when it failed
 .catch() → what to do if it fails
 async	Marks a function to be asynchronous
 await	Wait for the promise inside an async function
+51)async Executes	as soon as downloaded <script src="example.js" async></script>
+52) defer downloads but waits for html <script src="example.js" async></script>
+
 */
