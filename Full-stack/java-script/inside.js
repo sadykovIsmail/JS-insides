@@ -230,5 +230,20 @@ async	Marks a function to be asynchronous
 await	Wait for the promise inside an async function
 51)async Executes	as soon as downloaded <script src="example.js" async></script>
 52) defer downloads but waits for html <script src="example.js" async></script>
-
+53)fetch('https://api.example.com/data')
+.then(response => response.json())
+.then(data => console.log(data));
+(like getting data from a server or sending data to it).
+fetch() returns a Promise → use .then() to process.
+For POST is creating, PUT renewing, DELETE deleting, always include:
+method
+headers
+body (when sending data)
+The ID in the URL is commonly used for identifying resources.
+response.json() Parses the response body as JSON.
+chaining meaans having more .then methods they will run step by step if sth error catch will catch it
+async automatically returns a Promise. ta catch error we use try catch
+await pauses until the Promise resolves, uses inside async
+engine executes your code
+runtime provides the environment and tools 
 */
