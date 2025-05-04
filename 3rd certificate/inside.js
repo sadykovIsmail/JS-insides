@@ -18,6 +18,8 @@ Math.pow(base, exponent) it is base/expp.
  10) Math.sqrt() is 1/2
  11) .charCodeAt(0) returns unicode of strings
  12) Math.ceil (1.5)=> 2 is rounds up number 
+ 13) Math.floor() rounds down
+ 14) Math.round() rounds to nearest
  13) .onchange works when the vakue changes
  14) .target,
 it tells you which element the user changed, clicked, hovered, etc.
