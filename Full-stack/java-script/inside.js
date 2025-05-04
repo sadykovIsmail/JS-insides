@@ -246,4 +246,26 @@ async automatically returns a Promise. ta catch error we use try catch
 await pauses until the Promise resolves, uses inside async
 engine executes your code
 runtime provides the environment and tools 
+54) getCurrentPosition() gerts current position 
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback, options);
+par:  successCallback	Function called if location is retrieved
+errorCallback	Function called if there’s an error
+options	(Optional) extra settings for accuracy, timeout 
+position.coords.latitude     // number → latitude
+position.coords.longitude    // number → longitude
+position.coords.accuracy     // meters (how precise it is)
+position.coords.altitude     // optional (altitude in meters)
+position.coords.speed        // optional (meters/second)
+position.coords.heading      // optional (direction)
+position.timestamp           // when location was retrieved
+
+if you want to do for yourelf const options = {
+  enableHighAccuracy: true,   // use GPS if possible
+  timeout: 5000,              // wait max 5 seconds
+  maximumAge: 0               // no cached location
+};
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+
 */
