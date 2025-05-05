@@ -261,7 +261,7 @@ position.timestamp           // when location was retrieved
 
 if you want to do for yourelf const options = {
   enableHighAccuracy: true,   // use GPS if possible
-  timeout: 5000,              // wait max 5 seconds
+  timeout: 5000,             // wait max 5 seconds
   maximumAge: 0               // no cached location
 };
 
