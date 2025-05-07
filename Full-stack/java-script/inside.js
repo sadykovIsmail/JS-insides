@@ -2,7 +2,7 @@
 console.log("This runs after 2 seconds");
 }, 2000);
  2)setInterval()loopevery delay setInterval(() => {
-  console.log("This runs every 1 second");
+  console.log("This runs every 1 second")
 }, 1000);
  3) const id = requestAnimationFrame(myFunction);
 cancelAnimationFrame(id) Making smooth animations
