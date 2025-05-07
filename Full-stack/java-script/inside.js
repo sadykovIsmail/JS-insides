@@ -11,7 +11,7 @@ cancelAnimationFrame(id) Making smooth animations
   iterations: 2,  // repeat 2 times
   easing: 'ease-in-out'
 }
-..], {...});
+..], {...})
 animation.pause();      // stop
 animation.play();       // resume
 animation.reverse();    // go backwards
