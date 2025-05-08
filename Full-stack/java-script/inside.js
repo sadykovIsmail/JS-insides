@@ -118,7 +118,7 @@ ctx.fillRect(50, 50, 50, 50); // Draw scaled rectangle (will be twice as big)
 .show() → Opens like a normal box.
 .showModal() → Opens like a modal (blocks rest of the page).
 You can close it with .close().
- 6) we can find by key names from object console.log(obj[key]
+6) we can find by key names from object console.log(obj[key]
 7) listeners : change	When a form element's value changes and loses focus	Dropdowns, checkboxes, confirming a change
 input	Fires every time the user types or changes the value	Live search, instant feedback while typing
 click	When an element is clicked	Buttons, links, toggles
