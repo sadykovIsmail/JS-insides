@@ -191,7 +191,7 @@ caches.delete(name)	Delete a cache
 caches.keys()	List all caches
 41)let fingerprintExample = navigator.userAgent + screen.width + screen.height;
 console.log(fingerprintExample);
- it is unique to identify users 
+it is unique to identify users 
  42) indexDB stores objects arrays request.onsuccess: Called when the database opens successfully.
 request.onerror: Called if there’s an error opening the database
 db.createObjectStore("STORE_NAME", { keyPath: "ID" }) stores your data
