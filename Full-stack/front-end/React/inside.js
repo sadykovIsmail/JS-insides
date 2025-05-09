@@ -4,4 +4,20 @@
 
 3) React is a hybrid example—a UI library that's often used like a framework due to its flexibility and ecosystem.
 4) SPAs provide a modern, app-like experience, but developers must address accessibility, navigation, SEO, and performance to ensure quality.
+5) React is a component-based JavaScript library for building fast, dynamic web UIs. It's popular due to its reusability, efficient updates, and developer-friendly features like state handling and the virtual DOM
+6) components in react like functions in js
+function Greeting() {
+  const name = "John";
+  return <h1 className="title">Hello {name}</h1>;
+}      calling <Greeting />
+
+return (
+  <>
+    <h1>Hello</h1>
+    <p>Nice to meet you.</p>
+  </>
+);
+7) exporting component           importing import Cat from "./Cat";
+export default Cat;               import Cat from "./Cat";     <Cat />
+
 */
