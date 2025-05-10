@@ -16,7 +16,7 @@ return (
     <h1>Hello</h1>
     <p>Nice to meet you.</p>
   </>
-)
+);
 7) exporting component           importing import Cat from "./Cat";
 export default Cat               import Cat from "./Cat";     <Cat />
 
