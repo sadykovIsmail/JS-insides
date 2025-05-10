@@ -18,6 +18,6 @@ return (
   </>
 );
 7) exporting component           importing import Cat from "./Cat";
-export default Cat;               import Cat from "./Cat";     <Cat />
+export default Cat               import Cat from "./Cat";     <Cat />
 
 */
