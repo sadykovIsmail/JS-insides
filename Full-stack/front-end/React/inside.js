@@ -20,4 +20,4 @@ return (
 7) exporting component           importing import Cat from "./Cat";
 export default Cat               import Cat from "./Cat";     <Cat />
 
-*/
+8) Vite dramatically reduces startup and reload times npm create vite…, npm install, npm run dev*/
