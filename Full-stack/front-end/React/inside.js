@@ -41,4 +41,18 @@ State: mutable, owned by the component itself.
     return <h1>Please sign in.</h1>;
   }
 }
-11)*/
+11)function Greeting({ isLoggedIn }) {
+  return (
+    <h1>
+      {isLoggedIn ? "Welcome back!" : "Please sign in."}
+    </h1>
+  );
+}
+12)function Notification({ message }) {
+  return (
+    <div>
+      {message && <p>{message}</p>}
+    </div>
+  );
+}
+*/
