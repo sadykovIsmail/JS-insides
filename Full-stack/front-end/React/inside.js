@@ -119,5 +119,19 @@ Use each object’s stable unique ID (user.id) for key.
 
 You can render any JSX structure inside the .map().
 
-
+3)Conditional or Filtered Lists
+jsx
+function ActiveUsers({ users }) {
+  return (
+    <ul>
+      {users
+        .filter(u => u.isActive)
+        .map(u => (
+          <li key={u.id}>{u.name}</li>
+        ))
+      }
+    </ul>
+  );
+}
+Chain array methods before .map() to only render items that meet a condition.
 */
