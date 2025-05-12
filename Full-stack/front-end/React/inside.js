@@ -64,4 +64,17 @@ State: mutable, owned by the component itself.
   }
   return <div>{greetingMessage}</div>;
 }
-Note: Keeps your return clean when you have multiple conditions.*/
+Note: Keeps your return clean when you have multiple conditions.
+14)function Status({ code }) {
+  switch (code) {
+    case 200:
+      return <p>OK</p>;
+    case 404:
+      return <p>Not found</p>;
+    default:
+      return <p>Unknown status</p>;
+  }
+}
+Note: Handy for more than two discrete cases.
+
+*/
