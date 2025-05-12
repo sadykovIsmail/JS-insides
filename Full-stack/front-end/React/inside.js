@@ -76,5 +76,23 @@ Note: Keeps your return clean when you have multiple conditions.
   }
 }
 Note: Handy for more than two discrete cases.
+15) Basic Array of Primitives
+jsx
+Копировать
+Редактировать
+function FruitList() {
+  const fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
+
+  return (
+    <ul>
+      {fruits.map((fruit, idx) => (
+        <li key={fruit + '-' + idx}>{fruit}</li>
+      ))}
+    </ul>
+  );
+}
+.map() loops over fruits and returns an <li> for each.
+
+key prop (fruit + '-' + idx) must be unique among siblings.
 
 */
