@@ -78,8 +78,7 @@ Note: Keeps your return clean when you have multiple conditions.
 Note: Handy for more than two discrete cases.
 15) Basic Array of Primitives
 jsx
-Копировать
-Редактировать
+
 function FruitList() {
   const fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
 
@@ -94,5 +93,31 @@ function FruitList() {
 .map() loops over fruits and returns an <li> for each.
 
 key prop (fruit + '-' + idx) must be unique among siblings.
+
+16)Array of Objects
+jsx
+
+function UserList() {
+  const users = [
+    { id: 'u1', name: 'Alice', email: 'alice@example.com' },
+    { id: 'u2', name: 'Bob',   email: 'bob@example.com'   },
+    { id: 'u3', name: 'John',  email: 'john@example.com'  },
+  ];
+
+  return (
+    <div>
+      {users.map(user => (
+        <div key={user.id} className="user-card">
+          <h3>{user.name}</h3>
+          <p>{user.email}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+Use each object’s stable unique ID (user.id) for key.
+
+You can render any JSX structure inside the .map().
+
 
 */
