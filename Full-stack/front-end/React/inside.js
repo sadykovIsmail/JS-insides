@@ -119,7 +119,7 @@ Use each object’s stable unique ID (user.id) for key.
 
 You can render any JSX structure inside the .map().
 
-3)Conditional or Filtered Lists
+17)Conditional or Filtered Lists
 jsx
 function ActiveUsers({ users }) {
   return (
@@ -134,4 +134,64 @@ function ActiveUsers({ users }) {
   );
 }
 Chain array methods before .map() to only render items that meet a condition.
+
+18) styling:
+1) Basic Usage
+function Button({ text }) {
+  const btnStyle = {
+    backgroundColor: "#007BFF", // camelCase instead of kebab-case
+    color: "white",
+    padding: "10px 20px",
+    border: "none",
+    borderRadius: "4px",
+  };
+
+  return <button style={btnStyle}>{text}</button>;
+}
+The style prop accepts a JS object → keys are CSS properties in camelCase, values are strings (or numbers for unitless properties like lineHeight, flex, etc.).
+
+2) Direct Inline Object
+For just a few properties, you can inline the object literal:
+
+function SmallButton({ text }) {
+  return (
+    <button
+      style={{
+        backgroundColor: "green",
+        color: "white",
+        padding: "8px 16px",
+      }}
+    >
+      {text}
+    </button>
+  );
+}
+
+3)You can compute style values on the fly:
+function DynamicBox({ isActive }) {
+  const boxStyle = {
+    width: "100px",
+    height: "100px",
+    backgroundColor: isActive ? "limegreen" : "lightgray",
+    transition: "background-color 0.3s ease",
+  };
+
+  return <div style={boxStyle} />;
+}
+
+4)Merging Style Objects
+Combine multiple style sources with the spread operator:
+const baseStyle = {
+  padding: "12px",
+  fontSize: "14px",
+};
+
+function MergedButton({ primary }) {
+  const primaryStyle = primary
+    ? { backgroundColor: "blue", color: "white" }
+    : { backgroundColor: "gray", color: "black" };
+
+  return <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
+}
+Order matters: later properties override earlier ones.
 */
