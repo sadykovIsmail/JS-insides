@@ -33,4 +33,12 @@ Spread operator
 <Comp {...someObject} /> expands its keys as props.
 Props vs. State
 Props: immutable, come from parent.
-State: mutable, owned by the component itself.*/
+State: mutable, owned by the component itself.
+10) function Greeting({ isLoggedIn }) {
+  if (isLoggedIn) {
+    return <h1>Welcome back!</h1>;
+  } else {
+    return <h1>Please sign in.</h1>;
+  }
+}
+11)*/
