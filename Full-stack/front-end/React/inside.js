@@ -20,4 +20,17 @@ return (
 7) exporting component           importing import Cat from "./Cat";
 export default Cat               import Cat from "./Cat";     <Cat />
 
-8) Vite dramatically reduces startup and reload times npm create vite… creates new react, npm install installs from package.json,  npm run dev  starts running at http://localhost:5173/*/
+8) Vite dramatically reduces startup and reload times npm create vite… creates new react, npm install installs from package.json,  npm run dev  starts running at http://localhost:5173/
+9) What are props?
+Data passed from parent → child components.
+How to pass?
+<Child propName={value} />
+How to receive?
+In child: function Child(props) { … } or function Child({ propName }) { … }
+Multiple props
+<Comp a={1} b="two" c={true} />
+Spread operator
+<Comp {...someObject} /> expands its keys as props.
+Props vs. State
+Props: immutable, come from parent.
+State: mutable, owned by the component itself.*/
