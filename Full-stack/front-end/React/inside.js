@@ -55,4 +55,13 @@ State: mutable, owned by the component itself.
     </div>
   );
 }
-*/
+13)function Greeting({ isLoggedIn }) {
+  let greetingMessage;
+  if (isLoggedIn) {
+    greetingMessage = <h1>Welcome back!</h1>;
+  } else {
+    greetingMessage = <h1>Please sign in.</h1>;
+  }
+  return <div>{greetingMessage}</div>;
+}
+Note: Keeps your return clean when you have multiple conditions.*/
