@@ -25,6 +25,16 @@ export default Cat               import Cat from "./Cat";     <Cat />
 Data passed from parent → child componentsd
 How to pass?
 <Child propName={value} />
+function App() {
+  return (
+    <>
+      <Greeting name="Naomi" />
+      <Greeting name="Tom" />
+      <Greeting name="Oliver" />
+    </>
+  );
+}
+
 How to receive?
 In child: function Child(props) { … } or function Child({ propName }) { … }
 Multiple props
@@ -95,7 +105,6 @@ function FruitList() {
 key prop (fruit + '-' + idx) must be unique among siblings.
 
 16)Array of Objects
-jsx
 
 function UserList() {
   const users = [
