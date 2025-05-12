@@ -21,7 +21,7 @@ return (
 export default Cat               import Cat from "./Cat";     <Cat />
 
 8) Vite dramatically reduces startup and reload times npm create vite… creates new react, npm install installs from package.json,  npm run dev  starts running at http://localhost:5173/
-9) What are props?.
+9) What are props?
 Data passed from parent → child componentsd
 How to pass?
 <Child propName={value} />
