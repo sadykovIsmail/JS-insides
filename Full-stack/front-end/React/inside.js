@@ -203,4 +203,5 @@ function MergedButton({ primary }) {
   return <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
 }
 Order matters: later properties override earlier ones.
+19) 
 */
