@@ -204,4 +204,4 @@ function MergedButton({ primary }) {
 }
 Order matters: later properties override earlier ones.
 19) One root: wrap siblings in <></> is fragment or a container.   camelCase props: className, htmlFor, strokeWidth, etc.
-*/
+20)JSX elements directly inside a map() call always need keys!*/
