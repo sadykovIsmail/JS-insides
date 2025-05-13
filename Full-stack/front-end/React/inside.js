@@ -63,7 +63,7 @@ State: mutable, owned by the component itself.
     <div>
       {message && <p>{message}</p>}
     </div>
-  );
+  )
 }
 13)function Greeting({ isLoggedIn }) {
   let greetingMessage;
