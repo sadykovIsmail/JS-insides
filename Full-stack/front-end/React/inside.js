@@ -193,7 +193,7 @@ Combine multiple style sources with the spread operator:
 const baseStyle = {
   padding: "12px",
   fontSize: "14px",
-}
+};
 
 function MergedButton({ primary }) {
   const primaryStyle = primary
