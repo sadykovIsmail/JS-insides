@@ -215,4 +215,5 @@ is creating tools inside of folder
 23) npx create-react-app 08-my-poem-app --yes it will also create
 24) to create simpler run in Powershell npx create-react-app my-poem-app
 cd my-poem-app and npm start
-25) randomUUID() creates random*/
+25) randomUUID() creates random keys should never be created on the fly
+*/
