@@ -212,4 +212,7 @@ npm start
  22) cd "C:\Users\sadyk\OneDrive\Рабочий стол\fcc-frontend-libraries"
 npm create vite@latest 06-recipes-list -- --template react
 is creating tools inside of folder 
-23) npx create-react-app 08-my-poem-app --yes it will also create*/
+23) npx create-react-app 08-my-poem-app --yes it will also create
+24) to create simpler run in Powershell npx create-react-app my-poem-app
+cd my-poem-app and npm start
+25) randomUUID() creates random*/
