@@ -216,4 +216,7 @@ is creating tools inside of folder
 24) to create simpler run in Powershell npx create-react-app my-poem-app
 cd my-poem-app and npm start
 25) randomUUID() creates random keys should never be created on the fly
-*/
+26) state is the current state of sth Initialization	this.state = {...}	const [foo, setFoo] = useState
+Updating	this.setState({ foo: newVal })	setFoo(newVal)
+Merging vs Replacing	Merges objects shallowly	Replaces wholesale (you merge manually)
+Asynchronous nature	Updates may batch & be async	Same—treat setter calls as async*/
