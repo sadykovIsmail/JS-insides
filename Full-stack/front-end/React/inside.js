@@ -208,7 +208,7 @@ Order matters: later properties override earlier ones.
 21) to create react:  npm create vite@latest 06-recipes -- --template react
 cd my-app
 npm install
-npm start
+npm star
  22) cd "C:\Users\sadyk\OneDrive\Рабочий стол\fcc-frontend-libraries"
 npm create vite@latest 06-recipes-list -- --template react
 is creating tools inside of folder 
