@@ -220,4 +220,4 @@ cd my-poem-app and npm start
 Updating	this.setState({ foo: newVal })	setFoo(newVal)
 Merging vs Replacing	Merges objects shallowly	Replaces wholesale (you merge manually)
 Asynchronous nature	Updates may batch & be async	Same—treat setter calls as async
- to change we us setName()*/
+ to change we use setName()*/
