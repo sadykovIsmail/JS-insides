@@ -198,7 +198,7 @@ const baseStyle = {
 function MergedButton({ primary }) {
   const primaryStyle = primary
     ? { backgroundColor: "blue", color: "white" }
-    : { backgroundColor: "gray", color: "black" };
+   : { backgroundColor: "gray", color: "black" };
 
   return <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
 }
