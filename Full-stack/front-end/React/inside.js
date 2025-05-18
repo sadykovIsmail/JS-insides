@@ -221,4 +221,5 @@ Updating	this.setState({ foo: newVal })	setFoo(newVal)
 Merging vs Replacing	Merges objects shallowly	Replaces wholesale (you merge manually)
 Asynchronous nature	Updates may batch & be async	Same—treat setter calls as async
  to change we use setName()
-  use const [position, setPosition] = useState({ x: 0, y: 0 }); when using all of them not seperate */
+  use const [position, setPosition] = useState({ x: 0, y: 0 }); when using all of them not seperate
+  when we want to make array inside of usage we can do set([]) */
