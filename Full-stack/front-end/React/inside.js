@@ -199,7 +199,7 @@ function MergedButton({ primary }) {
   const primaryStyle = primary
     ? { backgroundColor: "blue", color: "white" }
     : { backgroundColor: "gray", color: "black" };
-    
+  
   return <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
 }
 Order matters: later properties override earlier ones.
