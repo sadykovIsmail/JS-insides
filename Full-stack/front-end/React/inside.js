@@ -207,7 +207,7 @@ Order matters: later properties override earlier ones.
 20)JSX elements directly inside a map() call always need keys!
 21) to create react:  npm create vite@latest 06-recipes -- --template react
 cd my-app
-npm install 
+npm install
 npm start
  22) cd "C:\Users\sadyk\OneDrive\Рабочий стол\fcc-frontend-libraries"
 npm create vite@latest 06-recipes-list -- --template react
