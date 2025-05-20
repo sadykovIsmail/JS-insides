@@ -222,4 +222,15 @@ Merging vs Replacing	Merges objects shallowly	Replaces wholesale (you merge manu
 Asynchronous nature	Updates may batch & be async	Same—treat setter calls as async
  to change we use setName()
   use const [position, setPosition] = useState({ x: 0, y: 0 }); when using all of them not seperate
-  when we want to make array inside of usage we can do set([]) */
+  when we want to make array inside of usage we can do set([]) 
+  27) for inputs     const data = Object.fromEntries(new FormData(e.target).entries());
+new FormData(e.target)
+e.target is the <form> element that was submitted.
+new FormData(form) builds a collection of all the input values inside that form, keyed by each input’s name attribute.
+
+.entries()
+This returns an iterator over [key, value] pairs for every form field.
+Example: [ ['name', 'Alice'], ['email', 'alice@example.com'], … ]
+
+Object.fromEntries(...)
+Takes those pairs and turns them into a plain JavaScript object:*/
