@@ -255,4 +255,9 @@ State sharing belongs via “lifting up” state, not via effects.
   };
 }, [/* dependencies ]);
 
+No deps → on every render
+
+[] → on mount (+ dev double-run), cleanup on unmount
+
+[a, b] → on mount, when a or b change, and on unmount
 */
