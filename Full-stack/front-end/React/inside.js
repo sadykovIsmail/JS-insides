@@ -270,4 +270,7 @@ Split up Effects
 One Effect = one sync process
 Prevent unintended side-effects or extra runs
 
+Linting
+Trust react-hooks/exhaustive-deps to catch missing dependencies
+Don’t suppress it—refactor or move values so that dependencies are correct
 */
