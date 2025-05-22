@@ -266,5 +266,8 @@ Cleanup
 Always return a function to undo timers, subscriptions, DOM listeners, etc.
 Ensures you never leak old intervals or open connections.
 
+Split up Effects
+One Effect = one sync process
+Prevent unintended side-effects or extra runs
 
 */
