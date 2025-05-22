@@ -228,14 +228,14 @@ new FormData(e.target)
 e.target is the <form> element that was submitted.
 new FormData(form) builds a collection of all the input values inside that form, keyed by each input’s name attribute.
 
-.entries()
+28) .entries()
 This returns an iterator over [key, value] pairs for every form field.
 Example: [ ['name', 'Alice'], ['email', 'alice@example.com'], … ]
 
-Object.fromEntries(...)
+29) Object.fromEntries(...)
 Takes those pairs and turns them into a plain JavaScript object:
 
-Side-Effects need a controlled lifecycle—don’t mix them with render logic.
+30) Side-Effects need a controlled lifecycle—don’t mix them with render logic.
 useEffect(callback, deps):
 callback runs after render;
 deps array controls when;
@@ -247,4 +247,12 @@ Always clean up timers, subscriptions, or listeners.
 Don’t over-use effects:
 Simple calculations belong in render.
 UI events belong in handlers.
-State sharing belongs via “lifting up” state, not via effects.*/
+State sharing belongs via “lifting up” state, not via effects.
+31) useEffect(() => {
+  // start
+  return () => {
+    // stop
+  };
+}, [/* dependencies ]);
+
+*/
