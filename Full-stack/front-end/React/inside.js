@@ -254,10 +254,13 @@ State sharing belongs via “lifting up” state, not via effects.
     // stop
   };
 }, [/* dependencies ]);
-
 No deps → on every render
-
 [] → on mount (+ dev double-run), cleanup on unmount
-
 [a, b] → on mount, when a or b change, and on unmount
+
+Dependencies
+Include every reactive value: props, state, derived in-component variables
+Omit non-reactive constants declared outside
+
+
 */
