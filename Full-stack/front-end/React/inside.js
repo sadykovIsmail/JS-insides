@@ -233,4 +233,18 @@ This returns an iterator over [key, value] pairs for every form field.
 Example: [ ['name', 'Alice'], ['email', 'alice@example.com'], … ]
 
 Object.fromEntries(...)
-Takes those pairs and turns them into a plain JavaScript object:*/
+Takes those pairs and turns them into a plain JavaScript object:
+
+Side-Effects need a controlled lifecycle—don’t mix them with render logic.
+useEffect(callback, deps):
+callback runs after render;
+deps array controls when;
+return a cleanup function to undo or stop side-effects.
+Empty array ([]) = run once;
+No array = run every render;
+Non-empty array = run on mount and whenever dependencies change.
+Always clean up timers, subscriptions, or listeners.
+Don’t over-use effects:
+Simple calculations belong in render.
+UI events belong in handlers.
+State sharing belongs via “lifting up” state, not via effects.*/
