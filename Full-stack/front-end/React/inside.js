@@ -262,5 +262,9 @@ Dependencies
 Include every reactive value: props, state, derived in-component variables
 Omit non-reactive constants declared outside
 
+Cleanup
+Always return a function to undo timers, subscriptions, DOM listeners, etc.
+Ensures you never leak old intervals or open connections.
+
 
 */
