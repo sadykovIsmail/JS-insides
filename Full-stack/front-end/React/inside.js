@@ -281,4 +281,10 @@ To reset a particular bit of state in response to a prop change, set it during r
 Code that runs because a component was displayed should be in Effects, the rest should be in events.
 If you need to update the state of several components, it’s better to do it during a single event.
 Whenever you try to synchronize state variables in different components, consider lifting state up.
-You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.  */
+You can fetch data with Effects, but you need to implement cleanup to avoid race conditions.  
+
+33) const memoizedValue = useMemo(
+  () => computeExpensiveValue(a, b),
+  [a, b]  runs only in change a or b
+);
+*/
