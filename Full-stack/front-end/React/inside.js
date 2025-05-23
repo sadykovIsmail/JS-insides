@@ -1,4 +1,5 @@
-/*1) Libraries (e.g., jQuery) offer focused tools for specific tasks like DOM manipulation and are flexible, giving developers more control.
+/* 1) when creating new react app 1)Goal → 2. UI & Data → 3. State & Flow → 4. Components → 5. Data/Effects → 6. Scaffold → 7. Polish
+1) Libraries (e.g., jQuery) offer focused tools for specific tasks like DOM manipulation and are flexible, giving developers more control.
 
 2) Frameworks (e.g., Angular, Remix, Next.js) provide structured architecture and enforce rules for building entire applications.
 
