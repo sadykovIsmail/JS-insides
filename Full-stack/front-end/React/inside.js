@@ -288,4 +288,9 @@ You can fetch data with Effects, but you need to implement cleanup to avoid race
   () => computeExpensiveValue(a, b),
   [a, b]  runs only in change a or b
 );
-*/
+
+34) Concept:	Functional Component  ; Class Component
+Props:	props.name or { name }      ; this.props.name
+State:	useState()                  ;	this.state, this.setState()
+Handlers: Inline or arrow functions ;	Define method + bind in constructor
+JSX	Return: directly                ;	Use render() method*/
