@@ -293,4 +293,11 @@ You can fetch data with Effects, but you need to implement cleanup to avoid race
 Props:	props.name or { name }      ; this.props.name
 State:	useState()                  ;	this.state, this.setState()
 Handlers: Inline or arrow functions ;	Define method + bind in constructor
-JSX	Return: directly                ;	Use render() method*/
+JSX	Return: directly                ;	Use render() method
+
+35)Lifecycle Phase:	Class Method ;	Functional Equivalent
+Mount:	componentDidMount      ;	useEffect(..., [])
+Update:	componentDidUpdate     ;	useEffect(..., [dep])
+Unmount:	componentWillUnmount ;	return () => {...} inside useEffect
+Render:	render()	             ;   Return JSX in function
+*/
