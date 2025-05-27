@@ -300,4 +300,69 @@ Mount:	componentDidMount      ;	useEffect(..., [])
 Update:	componentDidUpdate     ;	useEffect(..., [dep])
 Unmount:	componentWillUnmount ;	return () => {...} inside useEffect
 Render:	render()	             ;   Return JSX in function
-*/
+
+36) 🚀 1. Create a new project with Vite + React:
+bash
+Копировать код
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+OR for TypeScript:
+
+bash
+Копировать код
+npm create vite@latest my-app -- --template react-ts
+🧪 2. Install Vitest + Testing Tools:
+bash
+Копировать код
+npm install -D vitest jsdom @testing-library/react @testing-library/jest-dom @vitejs/plugin-react
+⚙️ 3. Create vite.config.js:
+Make sure it looks like this:
+
+js
+Копировать код
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.js',
+  },
+});
+🔧 4. Create src/setupTests.js:
+js
+Копировать код
+import { expect, afterEach } from 'vitest';
+import { cleanup } from '@testing-library/react';
+import * as matchers from '@testing-library/jest-dom/matchers';
+
+expect.extend(matchers);
+
+afterEach(() => cleanup());
+🧪 5. Create a sample test: src/App.test.jsx
+jsx
+Копировать код
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import App from './App';
+import '@testing-library/jest-dom';
+
+describe('App component', () => {
+  test('renders learn react link', () => {
+    render(<App />);
+    const linkElement = screen.getByText(/learn react/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+});
+▶️ 6. Add script in package.json (already exists in Vite):
+json
+Копировать код
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "test": "vitest"
+}*/
