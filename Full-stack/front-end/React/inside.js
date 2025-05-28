@@ -386,4 +386,5 @@ render() & screen	Setup and query your UI like a real user would
 userEvent: 	Makes tests simulate real interactions
 
 toMatchSnapshot()	Useful for verifying layout, risky when overused
-*/
+
+38)render() is creating ffake html dom*/
