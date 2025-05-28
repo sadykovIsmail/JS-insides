@@ -365,4 +365,20 @@ json
   "build": "vite build",
   "preview": "vite preview",
   "test": "vitest"
-}*/
+}
+  
+37)getByRole() – Best for everything (buttons, headings, links).
+
+getByLabelText() – Best for form inputs (associated with <label>).
+
+getByPlaceholderText() – Use only when no label exists.
+
+getByText() – Great for static content like paragraphs or labels.
+
+getByDisplayValue() – Good for pre-filled form values.
+
+Semantic Queries: getByAltText, getByTitle (less common)
+
+getByTestId() – Use as a last resort (only when nothing else fits).
+
+*/
