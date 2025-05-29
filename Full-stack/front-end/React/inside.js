@@ -391,4 +391,9 @@ toMatchSnapshot()	Useful for verifying layout, risky when overused
 
 39)act() is running after sth  act(() => {
     ReactDOM.render(<App />, el);
-  }); running after running dom*/
+  }); running after running dom in testing
+  
+40) propTypes is giving the exact propTypes in returnig not in testing 
+RenderName.propTypes = {
+  name: PropTypes.string.isRequired,
+}*/
