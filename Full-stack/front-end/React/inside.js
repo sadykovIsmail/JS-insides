@@ -367,7 +367,7 @@ json
   "test": "vitest"
 }
   
-37getByRole() – Best for everything (buttons, headings, links).
+37)getByRole() – Best for everything (buttons, headings, links).
 
 getByLabelText() – Best for form inputs (associated with <label>).
 
