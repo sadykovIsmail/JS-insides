@@ -396,4 +396,6 @@ toMatchSnapshot()	Useful for verifying layout, risky when overused
 40) propTypes is giving the exact propTypes in returnig not in testing 
 RenderName.propTypes = {
   name: PropTypes.string.isRequired,
-}*/
+}
+  
+41) useParams() lets you access dynamic values from the URL like /profile/:name*/
