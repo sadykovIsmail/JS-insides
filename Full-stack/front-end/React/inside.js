@@ -396,4 +396,6 @@ RenderName.propTypes = {
   name: PropTypes.string.isRequired,
 }
   
-41) useParams() lets you access dynamic values from the URL like /profile/:name*/
+41) useParams() lets you access dynamic values from the URL like /profile/:name
+
+42) npm install react-router-dom to install router*/
