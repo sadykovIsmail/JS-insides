@@ -309,12 +309,10 @@ cd my-app
 npm install
 OR for TypeScript:
 
-bash
-Копировать код
+
 npm create vite@latest my-app -- --template react-ts
 🧪 2. Install Vitest + Testing Tools:
-bash
-Копировать код
+
 npm install -D vitest jsdom @testing-library/react @testing-library/jest-dom @vitejs/plugin-react
 ⚙️ 3. Create vite.config.js:
 Make sure it looks like this:
