@@ -381,7 +381,7 @@ getByTestId() – Use as a last resort (only when nothing else fits).
 
 render() & screen	Setup and query your UI like a real user would
 
-userEvent: Makes tests simulate real interactions
+userEvent: c\Makes tests simulate real interactions
 
 toMatchSnapshot()	Useful for verifying layout, risky when overused
 
