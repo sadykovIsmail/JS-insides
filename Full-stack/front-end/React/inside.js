@@ -391,7 +391,7 @@ toMatchSnapshot()	Useful for verifying layout, risky when overused
     ReactDOM.render(<App />, el);
   }); running after running dom in testing
   
-40) propTypes is giving the exact propTypes in returnig not in testing 
+40)propTypes is giving the exact propTypes in returnig not in testing 
 RenderName.propTypes = {
   name: PropTypes.string.isRequired,
 }
