@@ -385,7 +385,7 @@ userEvent:  Makes tests simulate real interactions
 
 toMatchSnapshot()	Useful for verifying layout, risky when overused
 
-38)render() is creating ffake html dom
+38render() is creating ffake html dom
 
 39)act() is running after sth  act(() => {
     ReactDOM.render(<App />, el);
