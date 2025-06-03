@@ -398,4 +398,6 @@ RenderName.propTypes = {
   
 41) useParams() lets you access dynamic values from the URL like /profile/:name
 
-42) npm install react-router-dom to install router*/
+42) npm install react-router-dom to install router
+
+43) conposes: in css to share styles */
