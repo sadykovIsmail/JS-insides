@@ -355,7 +355,7 @@ describe('App component', () => {
     expect(linkElement).toBeInTheDocument();
   });
 });
-▶️ 6. Add script in package.json (already exists in Vite):
+▶ 6. Add script in package.json (already exists in Vite):
 json
 Копировать код
 "scripts": {
