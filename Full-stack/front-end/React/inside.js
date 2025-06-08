@@ -187,7 +187,7 @@ function DynamicBox({ isActive }) {
   };
 
   return <div style={boxStyle} />;
-}
+};
 
 4)Merging Style Objects
 Combine multiple style sources with the spread operator:
