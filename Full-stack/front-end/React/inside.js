@@ -201,7 +201,7 @@ function MergedButton({ primary }) {
     ? { backgroundColor: "blue", color: "white" }
     : { backgroundColor: "gray", color: "black" };
 
-  return <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
+  eturn <button style={{ ...baseStyle, ...primaryStyle }}>Click</button>;
 }
 Order matters: later properties override earlier ones.
 19) One root: wrap siblings in <></> is fragment or a container.   camelCase props: className, htmlFor, strokeWidth, etc.
