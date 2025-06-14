@@ -400,4 +400,13 @@ RenderName.propTypes = {
 
 42) npm install react-router-dom to install router
 
-43) conposes: in css to share styles */
+43) conposes: in css to share styles 
+
+44) create: import { createContext } from 'react';
+
+export const ShopContext = createContext({
+  cartItems: [],
+  addToCart: () => {},
+});
+  use provider:     <ShopContext.Provider value={{ cartItems, addToCart }}>
+ */
