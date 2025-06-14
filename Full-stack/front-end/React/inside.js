@@ -395,7 +395,7 @@ toMatchSnapshot()	Useful for verifying layout, risky when overused
 RenderName.propTypes = {
   name: PropTypes.string.isRequired,
 }bbbbb
-  
+  b
 41) useParams() lets you access dynamic values from the URL like /profile/:name
 
 42) npm install react-router-dom to install router
