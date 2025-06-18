@@ -434,4 +434,10 @@ Use Immer if you want to write reducers in a mutating style.
   // Expensive render here
   return <button onClick={onClick}>{children}</button>;
 });
-If onClick doesn’t change (same reference), component is not re-rendered*/
+If onClick doesn’t change (same reference), component is not re-rendered
+
+50)  setInterval(callback, delay)
+Runs a function (callback) repeatedly every delay milliseconds.
+
+51)clearInterval(intervalId)
+Stops the repeated execution set by setInterval.*/
