@@ -424,4 +424,14 @@ Use Immer if you want to write reducers in a mutating style.
     return products.reduce((total, p) => total + p.price * p.quantity, 0);
   }, [products]);
   
-47) useRef  buttonRef.current.textContent = "Changed!"; to dom manipulate */
+47) useRef  buttonRef.current.textContent = "Changed!"; to dom manipulate 
+
+48)const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []); avoids unnecessary re-renders.
+
+49) react memo const ButtonComponent = memo(({ onClick, children }) => {
+  // Expensive render here
+  return <button onClick={onClick}>{children}</button>;
+});
+If onClick doesn’t change (same reference), component is not re-rendered*/
