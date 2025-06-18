@@ -417,4 +417,9 @@ Replace useState with useReducer.
 Reducers require you to write a bit more code, but they help with debugging and testing.
 Reducers must be pure.
 Each action describes a single user interaction.
-Use Immer if you want to write reducers in a mutating style. */
+Use Immer if you want to write reducers in a mutating style. 
+
+46) useMemo() to cache the result of expensive calculation function Cart({ products }) {
+  const totalPrice = useMemo(() => {
+    return products.reduce((total, p) => total + p.price * p.quantity, 0);
+  }, [products]);*/
