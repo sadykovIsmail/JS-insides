@@ -128,3 +128,6 @@
 -- 16) SELECT * FROM friends_of_pickles WHERE species IN ('cat', 'human'); would return the friends_of_pickles that are either a cat or a human.
 
 -- To find rows that are not in a list, you use NOT IN instead of IN
+
+-- 17) to sort SELECT * FROM friends_of_pickles ORDER BY name;. That returns the names in ascending alphabetical order. 
+-- SELECT * FROM friends_of_pickles ORDER BY  height_cm DESC; returns from in descending from 10 to 1
