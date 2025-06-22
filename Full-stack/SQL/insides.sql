@@ -131,3 +131,5 @@
 
 -- 17) to sort SELECT * FROM friends_of_pickles ORDER BY name;. That returns the names in ascending alphabetical order. 
 -- SELECT * FROM friends_of_pickles ORDER BY  height_cm DESC; returns from in descending from 10 to 1
+
+-- 18)If you wanted to see the two shortest friends_of_pickles, you would run: SELECT * FROM friends_of_pickles ORDER BY height_cm LIMIT 2;
