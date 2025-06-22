@@ -142,3 +142,10 @@
 -- FROM character 
 -- INNER JOIN character_actor 
 -- ON character .id = character_actor.character_id inner join 
+
+-- 21) SELECT character.name, tv_show.name
+-- FROM character
+-- INNER JOIN character_tv_show
+-- ON character.id = character_tv_show.character_id
+-- INNER JOIN tv_show
+-- ON character_tv_show.tv_show_id = tv_show.id;
