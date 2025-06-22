@@ -135,3 +135,5 @@
 -- 18)If you wanted to see the two shortest friends_of_pickles, you would run: SELECT * FROM friends_of_pickles ORDER BY height_cm LIMIT 2;
 
 -- 19) Nested quiries SELECT * FROM family_members WHERE num_books_read = (SELECT MAX(num_books_read) FROM family_members)
+
+-- 20) SELECT * FROM family_members WHERE favorite_book IS NOT NULL returns if it is not null
