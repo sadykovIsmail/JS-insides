@@ -156,3 +156,11 @@
 -- ON character.id = character_tv_show.character_id
 -- INNER JOIN tv_show
 -- ON character_tv_show.tv_show_id = tv_show.id WHERE character.name != 'Willow Rosenberg' AND tv_show.name != 'How I Met Your Mother'
+
+23)LEFT JOIN: Show me all students, and the class if they have one.
+SELECT character.name, actor.name 
+FROM character 
+LEFT JOIN character_actor
+ON character.id = character_actor.character_id
+LEFT JOIN actor
+ON character_actor.actor_id = actor.id 
