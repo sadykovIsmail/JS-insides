@@ -164,3 +164,10 @@
 -- ON character.id = character_actor.character_id
 -- LEFT JOIN actor
 -- ON character_actor.actor_id = actor.id 
+
+-- 25) using AS SELECT c.name, a.name
+-- FROM character AS c
+-- LEFT JOIN character_actor AS ca
+-- ON c.id = ca.character_id
+-- LEFT JOIN actor AS a
+-- ON ca.actor_id = a.id
