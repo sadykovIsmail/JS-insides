@@ -183,3 +183,9 @@
 
 -- 27) _ matches one element % any
 -- SELECT * FROM robots WHERE name LIKE "%Robot 20__" 
+
+28) SELECT *,
+CASE WHEN species = 'human' THEN 'talk'
+WHEN species = 'dog' Then 'bark'
+ELSE 'meow' END AS sound
+FROM friends_of_pickles;
