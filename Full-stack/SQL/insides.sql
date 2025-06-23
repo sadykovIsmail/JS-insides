@@ -180,3 +180,6 @@
 -- ON character.id = character_actor.character_id
 -- LEFT JOIN actor
 -- ON character_actor.actor_id = actor.id
+
+-- 27) _ matches one element % any
+-- SELECT * FROM robots WHERE name LIKE "%Robot 20__" 
