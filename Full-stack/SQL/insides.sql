@@ -138,7 +138,7 @@
 
 -- 20) SELECT * FROM family_members WHERE favorite_book IS NOT NULL returns if it is not null
 
--- 21) SELECT character.name, character_actor.actor_name
+-- 21) SLECT character.name, character_actor.actor_name
 -- FROM character 
 -- INNER JOIN character_actor 
 -- ON character .id = character_actor.character_id inner join 
