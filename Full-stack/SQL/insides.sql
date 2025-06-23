@@ -189,3 +189,5 @@
 -- WHEN species = 'dog' Then 'bark'
 -- ELSE 'meow' END AS sound
 -- FROM friends_of_pickles;
+
+29) SELECT * FROM robots WHERE SUBSTR(location, -2) LIKE 'NY'; is location column where last two,letters are NY
