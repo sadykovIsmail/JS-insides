@@ -193,4 +193,4 @@
 -- 29) SELECT * FROM robots WHERE SUBSTR(location, -2) LIKE 'NY'; is location column where last two,letters are NY
 
 -- 30) SELECT COALESCE(NULL, NULL, 'first non-null', 'another') AS result;
--- -- returns: 'first non-null'
+-- -- returns: 'first non-null' 
