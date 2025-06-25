@@ -194,3 +194,7 @@
 
 -- 30) SELECT COALESCE(NULL, NULL, 'first non-null', 'another') AS result;
 -- -- returns: 'first non-null' 
+
+-- 31) SELECT name,  CONCAT(ROUND(100*population/(SELECT population from world WHERE name = 'Germany')), '%')
+
+-- from world WHERE continent='Europe' ROUND is rounding concat is adding
