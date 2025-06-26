@@ -205,4 +205,4 @@
 --   SELECT population FROM world y
 --   WHERE y.continent = x.continent
 -- );
---s elects the most population in each continentxs
+--ss elects the most population in each continentxs
