@@ -198,3 +198,11 @@
 -- 31) SELECT name,  CONCAT(ROUND(100*population/(SELECT population from world WHERE name = 'Germany')), '%')
 
 -- from world WHERE continent='Europe' ROUND is rounding concat is adding
+
+-- 32)SELECT continent, name, population
+-- FROM world x
+-- WHERE population >= ALL (
+--   SELECT population FROM world y
+--   WHERE y.continent = x.continent
+-- );
+-- selects the most population in each continentxs
