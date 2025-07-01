@@ -2,7 +2,7 @@
 You want to run it with a shebang as a system script (./filename.js, after chmod +x filename.js and adding #!/usr/bin/env node at the top)
 You want to run scripts defined in your package.json via node --run <script>, npm run <script>, or yarn run <script> 
 
- 2) GET with AXIOUS framework
+2) GET with AXIOUS framework
 const axios = require('axios');
 
 axios
@@ -15,7 +15,7 @@ axios
     console.error(error);
   });
 
-  3) POST with AXIOUS
+3) POST with AXIOUS
 axios
   .post('https://whatever.com/todos', {
     todo: 'Buy the milk',
@@ -28,7 +28,7 @@ axios
     console.error(error);
   });
 
-  4) GET MANUALLY with https
+4) GET MANUALLY with https
   const https = require('https');
 
 const options = {
@@ -84,4 +84,8 @@ req.on('error', error => {
 req.write(data);   // send the JSON data in the request
 req.end();         // finish the request
 
-  */ 
+  
+6)Promise-based (modern async):
+const fs = require('fs/promises');
+await fs.readFile('file.txt')
+*/ 
