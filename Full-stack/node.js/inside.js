@@ -116,4 +116,14 @@ params.get('user'); // 'abc'
 params.append('foo', 'bar');
 params.toString(); // 'user=abc&query=xyz&foo=bar'
 
-*/ 
+12)const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
+.on(event, handler): Listen for an event (add a callback).
+
+.emit(event, [arg1, arg2, ...]): Trigger an event (call the listeners, pass arguments).
+
+.once(event, handler): Listen only the first time the event fires.
+
+.removeListener(event, handler) / .off(event, handler): Remove a listener.
+
+.removeAllListeners(event): Remove all listeners for an event.*/ 
