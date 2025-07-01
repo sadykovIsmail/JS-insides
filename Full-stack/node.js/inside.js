@@ -102,4 +102,18 @@ await fs.appendFile('file.txt', 'More content!');
 8) for reading with node const fs = require('fs/promises');
 const data = await fs.readFile('file.txt', 'utf8');
 console.log(data);
+
+9) creating url const myURL = new URL('https://example.org/foo');
+const myURL2 = new URL('/foo', 'https://example.org/');
+
+10) changing url myURL.hostname = 'google.com';
+myURL.searchParams.append('key', 'value');
+myURL.hash = '#section2';
+console.log(myURL.toString()); // prints the new URL string
+
+11)const params = new URLSearchParams('user=abc&query=xyz');
+params.get('user'); // 'abc'
+params.append('foo', 'bar');
+params.toString(); // 'user=abc&query=xyz&foo=bar'
+
 */ 
