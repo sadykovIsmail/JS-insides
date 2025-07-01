@@ -98,4 +98,8 @@ fs.readdir() – Read a folder’s contents.
 fs.mkdir() – Make a new folder.
 fs.rmdir() – Remove a folder.
 await fs.appendFile('file.txt', 'More content!');
+
+8) for reading with node const fs = require('fs/promises');
+const data = await fs.readFile('file.txt', 'utf8');
+console.log(data);
 */ 
