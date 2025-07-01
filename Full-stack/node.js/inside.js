@@ -111,7 +111,7 @@ myURL.searchParams.append('key', 'value');
 myURL.hash = '#section2';
 console.log(myURL.toString()); // prints the new URL string
 
-11)onst params = new URLSearchParams('user=abc&query=xyz');
+11)const params = new URLSearchParams('user=abc&query=xyz');
 params.get('user'); // 'abc'
 params.append('foo', 'bar');
 params.toString(); // 'user=abc&query=xyz&foo=bar'
