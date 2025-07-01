@@ -88,4 +88,12 @@ req.end();         // finish the request
 6)Promise-based (modern async):
 const fs = require('fs/promises');
 await fs.readFile('file.txt')
-*/ 
+
+7)functions in fs
+fs.readFile() – Read a file.
+fs.writeFile() – Write to a file (creates if missing).
+fs.rename() – Rename a file or move it.
+fs.unlink() – Delete a file.
+fs.readdir() – Read a folder’s contents.
+fs.mkdir() – Make a new folder.
+fs.rmdir() – Remove a folder.*/ 
