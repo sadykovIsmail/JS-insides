@@ -96,4 +96,6 @@ fs.rename() – Rename a file or move it.
 fs.unlink() – Delete a file.
 fs.readdir() – Read a folder’s contents.
 fs.mkdir() – Make a new folder.
-fs.rmdir() – Remove a folder.*/ 
+fs.rmdir() – Remove a folder.
+await fs.appendFile('file.txt', 'More content!');
+*/ 
