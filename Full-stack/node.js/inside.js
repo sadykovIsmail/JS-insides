@@ -126,4 +126,8 @@ const eventEmitter = new EventEmitter();
 
 .removeListener(event, handler) / .off(event, handler): Remove a listener.
 
-.removeAllListeners(event): Remove all listeners for an event.*/ 
+.removeAllListeners(event): Remove all listeners for an event.
+
+13) Use node --inspect yourfile.js to start debugging.
+Open chrome://inspect in Chrome.
+Use breakpoints and the Watch tab to inspect your app step-by-step.*/ 
