@@ -130,4 +130,10 @@ const eventEmitter = new EventEmitter();
 
 13) Use node --inspect yourfile.js to start debugging.
 Open chrome://inspect in Chrome.
-Use breakpoints and the Watch tab to inspect your app step-by-step.*/ 
+Use breakpoints and the Watch tab to inspect your app step-by-step.
+
+14)fs.readFile(...)	Read a file from disk (e.g. index.html)
+path.join(...)	Build the correct full path to the file
+__dirname	Current project folder path
+res.writeHead(...)	Set HTTP status (200 or 500) and content type
+res.end(data)	Send the actual HTML page to browser*/ 
