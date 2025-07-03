@@ -156,4 +156,9 @@ if (process.env.DEBUG === "true") {
     console.log("Debugging is ON");
 }
 
+16)to start express
+npm init -y
+npm install express
+node app.js
+
  */ 
