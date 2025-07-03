@@ -136,4 +136,24 @@ Use breakpoints and the Watch tab to inspect your app step-by-step.
 path.join(...)	Build the correct full path to the file
 __dirname	Current project folder path
 res.writeHead(...)	Set HTTP status (200 or 500) and content type
-res.end(data)	Send the actual HTML page to browser*/ 
+res.end(data)	Send the actual HTML page to browser
+
+15) FOR SECRET  CODES: 1)npm install dotenv
+2) # .env
+NODE_ENV=development
+PORT=3000
+DB_URL=mongodb://localhost:27017/mydb
+API_KEY=123456789abcdef
+SECRET_TOKEN=mysecrettoken
+DEBUG=true
+3)require('dotenv').config(); // Load .env variables into process.env
+4) for using console.log(process.env.NODE_ENV);      // development
+console.log(process.env.PORT);          // 3000
+console.log(process.env.API_KEY);       // 123456789abcdef
+console.log(process.env.SECRET_TOKEN);  // mysecrettoken
+
+if (process.env.DEBUG === "true") {
+    console.log("Debugging is ON");
+}
+
+ */ 
