@@ -167,5 +167,24 @@ node app.js
 app.post("/path", (req, res) => { ... });
 
 
+19) controllers
+// General response
+res.send("Hello!");          // Sends plain text
+res.send({ a: 1 });          // Sends JSON if it's an object
+
+// JSON API response
+res.json({ user: "Alex" });  // Always sends as JSON
+
+// Set status code
+res.status(404).send("Not found");
+res.status(500).json({ error: "Internal error" });
+
+// Redirect
+res.redirect('/home');        // Temporary redirect
+res.redirect(301, '/about');  // Permanent redirect
+
+// Render view (with a template engine)
+res.render('dashboard', { username: "John" });
+
 
  */ 
