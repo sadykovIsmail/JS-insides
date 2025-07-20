@@ -163,4 +163,9 @@ node app.js
 
 17)"/message{s}", "/{*splat}"matches all, "/:username/messages/:id"
 
+18)app.get("/path", (req, res) => { res.send("Response"); });
+app.post("/path", (req, res) => { ... });
+
+
+
  */ 
