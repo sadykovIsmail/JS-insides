@@ -180,8 +180,10 @@ res.status(404).send("Not found");
 res.status(500).json({ error: "Internal error" });
 
 // Redirect
-res.redirect('/home');        // Temporary redirect
-res.redirect(301, '/about');  // Permanent redirect
+app.get('/old-page', (req, res) => {
+  res.redirect('/new-page');
+});
+
 
 // Render view (with a template engine)
 res.render('dashboard', { username: "John" });
