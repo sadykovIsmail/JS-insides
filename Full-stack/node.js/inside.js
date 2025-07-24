@@ -194,4 +194,7 @@ res.render('dashboard', { username: "John" });
 <%= %>	Output escaped text (e.g., variable content)
 <%- %>	Output unescaped HTML (good for includes)
 <%- include("component", data) %> to reuse
+
+res.render("index", { links: links }) means:
+the index.ejs file gets a variable called links
  */ 
