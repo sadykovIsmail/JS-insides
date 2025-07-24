@@ -194,10 +194,11 @@ res.render('dashboard', { username: "John" });
 3) to eun node app.js
 
 
-21)<% %>	Run JavaScript (no output)
-<%= %>	Output escaped text (e.g., variable content)
-<%- %>	Output unescaped HTML (good for includes)
-<%- include("component", data) %> to reuse
+21)<% code %>	Run some JS code (like if, for, etc.)
+<%= value %>	Output escaped value
+<%- value %>	Output raw/unescaped HTML
+<%# comment %>	This is a comment
+<%%	Outputs literal <%
 
 res.render("index", { links: links }) means:
 the index.ejs file gets a variable called links
