@@ -193,4 +193,5 @@ res.render('dashboard', { username: "John" });
 21)<% %>	Run JavaScript (no output)
 <%= %>	Output escaped text (e.g., variable content)
 <%- %>	Output unescaped HTML (good for includes)
+<%- include("component", data) %> to reuse
  */ 
