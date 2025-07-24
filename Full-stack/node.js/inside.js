@@ -188,5 +188,9 @@ app.get('/old-page', (req, res) => {
 // Render view (with a template engine)
 res.render('dashboard', { username: "John" });
 
+20)to use EJS 
 
+21)<% %>	Run JavaScript (no output)
+<%= %>	Output escaped text (e.g., variable content)
+<%- %>	Output unescaped HTML (good for includes)
  */ 
