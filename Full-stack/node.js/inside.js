@@ -189,6 +189,10 @@ app.get('/old-page', (req, res) => {
 res.render('dashboard', { username: "John" });
 
 20)to use EJS 
+1) npm init -y
+2)npm install express ejs
+3) to eun node app.js
+ff
 
 21)<% %>	Run JavaScript (no output)
 <%= %>	Output escaped text (e.g., variable content)
