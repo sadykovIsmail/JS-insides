@@ -192,6 +192,14 @@ res.render('dashboard', { username: "John" });
 1) npm init -y
 2)npm install express ejs
 3) to eun node app.js
+4)in app js 
+const express = require("express");
+const path = require("node:path");
+
+const app = express();
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
 
 
 21)<% code %>	Run some JS code (like if, for, etc.)
