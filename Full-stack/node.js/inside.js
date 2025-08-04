@@ -191,7 +191,7 @@ res.render('dashboard', { username: "John" });
 20)to use EJS 
 1) npm init -y
 2)npm install express ejs
-3) to eun node app.js
+3) to run node app.js
 4)in app js 
 const express = require("express");
 const path = require("node:path");
@@ -210,4 +210,12 @@ app.set("view engine", "ejs");
 
 res.render("index", { links: links }) means:
 the index.ejs file gets a variable called links
- */ 
+ 
+
+22)FORM Concept	Meaning
+1) form action="/new" method="POST"	Browser sends a POST request to your server
+2)app.post("/new", (req, res) => it answers to that request in app.js
+3) name="messageUser"	Input field's name — this becomes req.body.messageUser
+4) app.use(express.urlencoded({ extended: true }));	Tells Express how to read HTML form data
+5) req.body	Object that contains form data
+6) res.redirect("/")	After handling the form, go back to homepage*/ 
