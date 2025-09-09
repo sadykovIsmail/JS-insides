@@ -234,5 +234,5 @@ router.get("/", controller.getUsernames) → Route: GET / shows all usernames
 router.get("/new") → Route: shows a form for adding usernames.
 router.post("/new") → Route: handles form submission and inserts into DB.
 req.body.username → Contains form input value with name="username".
-res.redirect("/") → After adding user, sends you back to homepage.
+res.redirect("/") → After adding user, sends you back to homepage.d
 app.use(bodyParser.urlencoded(...)) → Lets Express read form data ddddddddddd*/ 
