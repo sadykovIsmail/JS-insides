@@ -178,7 +178,7 @@ res.json({ user: "Alex" });  // Always sends as JSON
 // Set status code
 res.status(404).send("Not found");
 res.status(500).json({ error: "Internal error" });
-ww
+www
 // Redirect
 app.get('/old-page', (req, res) => {
   res.redirect('/new-page');
