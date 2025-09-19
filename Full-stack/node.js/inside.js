@@ -219,7 +219,7 @@ the index.ejs file gets a variable called links
 4) app.use(express.urlencoded({ extended: true }));	Tells Express how to read HTML form data
 5) req.body	Object that contains form data
 6) res.redirect("/")	After handling the form, go back to homepage
-
+c
 23)Using PostgreSQL: CREATE DATABASE top_users; → Makes a new database in PostgreSQL.
 CREATE TABLE usernames (...); → Creates a table (like a spreadsheet) inside the DB.
 INSERT INTO usernames (username) VALUES ('Mao'); → Adds a row of data to the table.
@@ -227,7 +227,7 @@ SELECT * FROM usernames; → Reads all rows from the table.
 Pool (pg) → A reusable connection to PostgreSQL for Node.js apps
 pool.query("SELECT * FROM usernames"); → Runs SQL from Node.js.
 rows → The result of a query, an array of JavaScript objects (each row = object).
-$1, $2 in SQL → Placeholders for safe parameters (prevents SQL injection).
+$1, $2 in SQL → Placeholders for safe parameters (prevents ScQL injection).
 insertUsername("Lofty") → Function that runs an INSERT SQL query.
 controllers/usersController.js → Defines what happens when a route is requested.
 router.get("/", controller.getUsernames) → Route: GET / shows all usernames
