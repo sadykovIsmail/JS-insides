@@ -219,7 +219,7 @@ the index.ejs file gets a variable called links
 4) app.use(express.urlencoded({ extended: true }));	Tells Express how to read HTML form data
 5) req.body	Object that contains form data
 6) res.redirect("/")	After handling the form, go back to homepage
-ccc
+cccc
 23)Using PostgreSQL: CREATE DATABASE top_users; → Makes a new database in PostgreSQL.
 CREATE TABLE usernames (...); → Creates a table (like a spreadsheet) inside the DB.
 INSERT INTO usernames (username) VALUES ('Mao'); → Adds a row of data to the table.
