@@ -211,7 +211,7 @@ app.set("view engine", "ejs");
 res.render("index", { links: links }) means:
 the index.ejs file gets a variable called links
 fff  fff fff df f fff fd
-ccccccccccccc
+cccccccccccccc
 22)FORM Concept	Meaning
 1) form action="/new" method="POST"	Browser sends a POST request to your server
 2)app.post("/new", (req, res) => it answers to that request in app.js
