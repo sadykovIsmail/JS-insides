@@ -235,4 +235,17 @@ router.get("/new") → Route: shows a form for adding usernames.
 router.post("/new") → Route: handles form submission and inserts into DB.
 req.body.username → Contains form input value with name="username".
 res.redirect("/") → After adding user, sends you back to homepage.d
-app.use(bodyParser.urlencoded(...)) → Lets Express read form data ddddddddddddddddddd*/ d
+app.use(bodyParser.urlencoded(...)) → Lets Express read form data ddddddddddddddddddd
+
+23)Authentication
+passport.use(new LocalStrategy(...)) → Sets up username/password login strategy.
+passport.authenticate("local") → Middleware to log in a user.
+passport.serializeUser((user, done) => ...) → Saves user ID in session cookie.
+passport.deserializeUser((id, done) => ...) → Retrieves user from DB using session ID.
+req.user → Logged-in user object, available after authentication.
+req.logout() → Logs the user out and clears session cookie.
+express-session → Middleware that stores session IDs in cookies
+bcrypt.hash(password, saltRounds) → Hashes password before storing in DB.
+bcrypt.compare(plainPassword, hashedPassword) → Checks password at login
+saltRounds → Number of rounds for hashing (e.g., 10 is standard).
+Store only the hashed password in the database, never plain text.*/ 
