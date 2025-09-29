@@ -236,7 +236,7 @@ router.post("/new") → Route: handles form submission and inserts into DB.
 req.body.username → Contains form input value with name="username".
 res.redirect("/") → After adding user, sends you back to homepage.d
 app.use(bodyParser.urlencoded(...)) → Lets Express read form data ddddddddddddddddddd
-
+c
 23)Authentication
 passport.use(new LocalStrategy(...)) → Sets up username/password login strategy.
 passport.authenticate("local") → Middleware to log in a user.
