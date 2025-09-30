@@ -109,7 +109,7 @@ ctx.rotate(Math.PI / 4); // Rotate by 45 degrees (Math.PI / 4)
 ctx.fillStyle = 'brown'; // Set fill color to brown
 ctx.fillRect(0, 0, 100, 100); // Draw rotated rectangle
 ctx.restore(); // Restore previous state
-ccccccccccccc
+cccccccccccccc
 // 20. scale(x, y)
 ctx.scale(2, 2); // Scale by 2x in both X and Y direction
 ctx.fillStyle = 'orange'; // Set fill color to orange
