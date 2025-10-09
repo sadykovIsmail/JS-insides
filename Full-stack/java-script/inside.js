@@ -267,5 +267,9 @@ if you want to do for yourelf const options = {
 
 navigator.geolocation.getCurrentPosition(success, error, options);
 
+55)require('dotenv').config() to include env
+npm install express express-session passport passport-local ejs pg bcryptjs express-validator dotenv
+
+
 
 */
