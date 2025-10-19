@@ -1,0 +1,5 @@
+// Initialize Prisma	npx prisma init --datasource-provider postgresql
+// Schema definition	prisma/schema.prisma
+// Create tables	npx prisma migrate dev --name init
+// Generate client	npx prisma generate
+// Query DB	import { PrismaClient } from '@prisma/client'
