@@ -248,4 +248,7 @@ express-session → Middleware that stores session IDs in cookies
 bcrypt.hash(password, saltRounds) → Hashes password before storing in DB.
 bcrypt.compare(plainPassword, hashedPassword) → Checks password at login
 saltRounds → Number of rounds for hashing (e.g., 10 is standard).
-Store only the hashed password in the database, never plain text.*/ 
+Store only the hashed password in the database, never plain text.
+
+24)require('dotenv').config() to include env
+npm install express express-session passport passport-local ejs pg bcryptjs express-validator dotenv*/ 
