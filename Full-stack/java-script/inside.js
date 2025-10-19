@@ -264,7 +264,7 @@ if you want to do for yourelf const options = {
   timeout: 5000,             // wait max 5 seconds
   maximumAge: 0               // no cached location
 };
-
+x
 navigator.geolocation.getCurrentPosition(success, error, options);
 
 55)require('dotenv').config() to include env
