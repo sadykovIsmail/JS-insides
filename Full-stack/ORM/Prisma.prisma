@@ -1,5 +1,14 @@
-// Initialize Prisma	npx prisma init --datasource-provider postgresql
-// Schema definition	prisma/schema.prisma
-// Create tables	npx prisma migrate dev --name init
-// Generate client	npx prisma generate
-// Query DB	import { PrismaClient } from '@prisma/client'
+/*
+1 Initialize Prisma	npx prisma init --datasource-provider postgresql
+2 Schema definition	prisma/schema.prisma
+3 Create tables	npx prisma migrate dev --name init
+4 Generate client	npx prisma generate
+5 Query DB	import { PrismaClient } from '@prisma/client'
+6 Create record	prisma.user.create({ data: {...} })
+7 Read all	prisma.user.findMany()
+8 Read one	prisma.user.findUnique({ where: { id: 1 } })
+9 Update	prisma.user.update({ where: { id: 1 }, data: { name: 'New' } })
+10 Delete	prisma.user.delete({ where: { id: 1 } })
+11 Include related	prisma.user.findMany({ include: { posts: true } })
+
+*/
