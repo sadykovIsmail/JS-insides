@@ -13,4 +13,4 @@
 12 migrate reset	Drop & recreate database	When DB is out of sync
 13 migrate dev	Create and apply migration	After changing models
 14 generate	Rebuild Prisma Client	After changing schema
-*/vvvvvv
+*/vvvvvvv
