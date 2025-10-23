@@ -13,4 +13,4 @@
 12 npx prisma migrate reset --force      	    Drop & recreate database	When DB is out of sync
 13 npx prisma migrate dev --name init_auth  	Create and apply migration	After changing models
 14 npx prisma generate                      	After changing schema
-*/
+*/s
