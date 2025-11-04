@@ -23,4 +23,7 @@ str + int = typeError  ,  print(f'The sum of {num1} and {num2} is {num1 + num2}'
 hello world  print(my_str[-2]) # l  , print(my_str[1:4]) # ell  , print(my_str[8:])  # rld  , print(my_str[0:11:2])  # Hlowrd   , print(my_str[::-1]) # dlrow olleH
 print('Hello' in my_str)  # True
 
+6) actions for strings: upper() #uppercase , lower(), strip() #removes space bef or aft  , my_str.replace('hello', 'hi')  , split() splits to the list,,
+join(list),  .startswith('hello') #checks  , .endswith('world') #checks , .find('world') # 6 , .count('o') # 2  , .capitalize() #capitalizes  ,  .isupper() # checks 
+.islower() # checks  ,  .title('hello world') # Hello World
 '''
