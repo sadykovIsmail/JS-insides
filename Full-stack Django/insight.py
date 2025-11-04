@@ -13,7 +13,7 @@ time.sleep(2)
 print('Done!')
 
 3) data types: integer: 4, -5 , float:4.50 , complex: 3 + 4j , set:{4, 2, 0}, dictionary: {'name': 'Ismail'} , typle: (4,2,0) , range(5) #(0, 5) , 
-list = [22, 'Hello', 3.24, true] , None # is nothing
+list = [22, 'Hello', 3.24, true] , None # is nothing, to check: type()
 
 4) immutable data types: string, integer, float, boolean, tuple, and range. #can reassing but not change the value
 '''
