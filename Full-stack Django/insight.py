@@ -33,4 +33,6 @@ print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int(
  
 8) Scope: LEGB  , nonlocal res  # Allow modification of an enclosing variable
 global my_var_2  # Makes it globally usable or can change the global var
+
+9) if condition:    , elif con2:  , else:  #if statement
 '''
