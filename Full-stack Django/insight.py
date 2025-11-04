@@ -17,5 +17,10 @@ list = [22, 'Hello', 3.24, true] , None # is nothing, to check: type() , checkin
 
 4) immutable data types: string, integer, float, boolean, tuple, and range. #can reassing but not change the value
 
+5) Strings: multiline strings: my_str_3 = """Multiline
+string"""   using "" : quote = 'She said, "Hello World!"' or "She said, \"Hello!\""  , 
+str + int = typeError  ,  print(f'The sum of {num1} and {num2} is {num1 + num2}') # The sum of 5 and 10 is 15  , len() #checks the length 
+hello world  print(my_str[-2]) # l  , print(my_str[1:4]) # ell  , print(my_str[8:])  # rld  , print(my_str[0:11:2])  # Hlowrd   , print(my_str[::-1]) # dlrow olleH
+print('Hello' in my_str)  # True
 
 '''
