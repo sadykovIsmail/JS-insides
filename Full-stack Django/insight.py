@@ -26,6 +26,7 @@ print('Hello' in my_str)  # True
 6) actions for strings: upper() #uppercase , lower(), strip() #removes space bef or aft  , my_str.replace('hello', 'hi')  , split() splits to the list,,
 join(list),  .startswith('hello') #checks  , .endswith('world') #checks , .find('world') # 6 , .count('o') # 2  , .capitalize() #capitalizes  ,  .isupper() # checks 
 .islower() # checks  ,  .title('hello world') # Hello World  , bool() #checks truthy or falsly
+str.maketrans(from, to) #builds mapping  ,  string.translate(mapping) applies that translate
 
 7) Integers and Floats: print(type(my_int_1)) # <class 'int'>  ,  my_float_2 % my_float_1 #will return the remainder of division
 print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int() , float()  , round(my_int_2, 1) # rounds to 1 decimal places  , abs(-15) #15 
@@ -37,4 +38,5 @@ global my_var_2  # Makes it globally usable or can change the global var
 9) if condition:    , elif con2:  , else:  #if statement
 
 10) "and",  "or",  "not" operators 
+
 '''
