@@ -39,4 +39,6 @@ global my_var_2  # Makes it globally usable or can change the global var
 
 10) "and",  "or",  "not" operators 
 
+11)del developer[1] #deletes the item index 1 from developer
+
 '''
