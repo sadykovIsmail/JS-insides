@@ -20,7 +20,7 @@ list = [22, 'Hello', 3.24, true] , None # is nothing, to check: type() , checkin
 5) Strings: multiline strings: my_str_3 = """Multiline
 string"""   using "" : quote = 'She said, "Hello World!"' or "She said, \"Hello!\""  , 
 str + int = typeError  ,  print(f'The sum of {num1} and {num2} is {num1 + num2}') # The sum of 5 and 10 is 15  , len() #checks the length 
-hello world  print(my_str[-2]) # l  , print(my_str[1:4]) # ell  , print(my_str[8:])  # rld  , print(my_str[0:11:2])  # Hlowrd   , print(my_str[::-1]) # dlrow olleH
+hello world  print(my_str[-2]) # l  , sentence[start:stop] # start included stop excluded  , print(my_str[8:])  # rld  , print(my_str[0:11:2])  # Hlowrd   , print(my_str[::-1]) # dlrow olleH
 print('Hello' in my_str)  # True
 
 6) actions for strings: upper() #uppercase , lower(), strip() #removes space bef or aft  , my_str.replace('hello', 'hi')  , split() splits to the list,,
