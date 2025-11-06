@@ -50,4 +50,6 @@ append() # adds element to last   ,   extend() # adds elements from list to list
 13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,  
 .sorted(iterable, key=None, reverse=False) # returns new list
 
+14)for language in programming_languages:    # for loop    ,    while guess != secret_number:  # whilie loop
+    print(language)   else:  # works for both
 '''
