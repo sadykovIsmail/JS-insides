@@ -47,5 +47,7 @@ append() # adds element to last   ,   extend() # adds elements from list to list
 .remove(el) # removes el    ,   .pop(index) # removes at index   ,    clear() #clears   ,   sort() #in place sort 
 .sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index
 
+13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,  
+.sorted(iterable, key=None, reverse=False) # returns new list
 
 '''
