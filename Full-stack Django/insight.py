@@ -53,11 +53,12 @@ append() # adds element to last   ,   extend() # adds elements from list to list
 14)for language in programming_languages:    # for loop    ,    while guess != secret_number:  # whilie loop
     print(language)   else: , break, continue  # works for both
     
-15)Operations: list(enumerate(languages, start))   ,    list(zip(developers, ids))  #combines together   ,   
+15)Iterable Operations: list(enumerate(languages, start))   ,    list(zip(developers, ids))  #combines together   ,   
 for name, id in zip(developers, ids):
     print(f'Name: {name}')
     print(f'ID: {id}')
     
 even_numbers = [num for num in range(21) if num % 2 == 0]  # without else
 result = ['Even' if num % 2 == 0 else 'Odd' for num in numbers]  # with even included
+filter(function, iterable)
 '''
