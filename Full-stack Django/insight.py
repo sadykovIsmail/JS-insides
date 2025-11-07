@@ -37,7 +37,7 @@ global my_var_2  # Makes it globally usable or can change the global var
 
 9) if condition:    , elif con2:  , else:  #if statement
 
-10) "and",  "or",  "not" operators 
+10) "and",  "or",  "not" operators   ,  range(start, stop, step)
 
 11)del developer[1] #deletes the item index 1 from developer
 
@@ -51,5 +51,13 @@ append() # adds element to last   ,   extend() # adds elements from list to list
 .sorted(iterable, key=None, reverse=False) # returns new list
 
 14)for language in programming_languages:    # for loop    ,    while guess != secret_number:  # whilie loop
-    print(language)   else:  # works for both
+    print(language)   else: , break, continue  # works for both
+    
+15)Operations: list(enumerate(languages, start))   ,    list(zip(developers, ids))  #combines together   ,   
+for name, id in zip(developers, ids):
+    print(f'Name: {name}')
+    print(f'ID: {id}')
+    
+even_numbers = [num for num in range(21) if num % 2 == 0]  # without else
+result = ['Even' if num % 2 == 0 else 'Odd' for num in numbers]  # with even included
 '''
