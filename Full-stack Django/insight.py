@@ -60,5 +60,6 @@ for name, id in zip(developers, ids):
     
 even_numbers = [num for num in range(21) if num % 2 == 0]  # without else
 result = ['Even' if num % 2 == 0 else 'Odd' for num in numbers]  # with even included
-filter(function, iterable)
+filter(function, iterable)   # filters   ,    map(function, iterable)  # changes each    ,   sum(iterable, start=0) #sums
+lambda args: expression #small function   list(map(lambda x: x ** 2, numbers))
 '''
