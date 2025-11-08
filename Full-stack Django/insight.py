@@ -72,4 +72,8 @@ for key, value in dictionary.items():      ,     for index, product in enumerate
 17)Set: set() # empty Set  ,  {} # empty Dictionary  ,   my_set.add(6) #adds  ,  .remove(el) # removes  , .clear() #clears  ,  
 A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks if has NOT in common  ,  | adds tow sets no common  , & returns common
  A - B #returns element form A arenot in B  ,  ^ returns unique elements ,  
+ 
+18) math	Math operations (sqrt, sin, factorial)	math.sqrt(16)    ,   random	Random numbers, shuffling	random.randint(1, 10)  ,  datetime	Dates and times	datetime.datetime.now()
+os	Interact with operating system	os.listdir()   ,   sys	System-level commands and args	sys.argv   ,  time	Sleep, measure execution time	time.sleep(2)
+json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.findall(r'\d+', text)   ,  statistics	Mean, median, stdev	statistics.mean([1,2,3])
 '''
