@@ -68,4 +68,8 @@ dictionary[key] = new value    ,   dictionary.get(key, default)   ,  dic.keys() 
 pizza.update({ 'price': 15, 'total_time': 25 })  , student.pop('key', 'default') #gives value removes key  ,  .popitem() #removes and gives the last key and value like tuple
 for key, value in dictionary.items():      ,     for index, product in enumerate(products.items(), 1):
     dictionary[key] = round(value * 0.8)   ,         print(index, product)
+    
+17)Set: set() # empty Set  ,  {} # empty Dictionary  ,   my_set.add(6) #adds  ,  .remove(el) # removes  , .clear() #clears  ,  
+A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks if has NOT in common  ,  | adds tow sets no common  , & returns common
+ A - B #returns element form A arenot in B  ,  ^ returns unique elements ,  
 '''
