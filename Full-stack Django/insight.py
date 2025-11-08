@@ -33,7 +33,7 @@ print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int(
  bin(my_int) # base of 2  , oct(int) # base of 8 , hex(int) # base of 16
  
 8) Scope: LEGB  , nonlocal res  # Allow modification of an enclosing variable
-global my_var_2  # Makes it globally usable or can change the global var
+global my_var_2  # Makes it globally usable or can change the global var inside function
 
 9) if condition:    , elif con2:  , else:  #if statement
 
@@ -76,5 +76,5 @@ A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks
 18) math	Math operations (sqrt, sin, factorial)	math.sqrt(16)    ,   random	Random numbers, shuffling	random.randint(1, 10)  ,  datetime	Dates and times	datetime.datetime.now()
 os	Interact with operating system	os.listdir()   ,   sys	System-level commands and args	sys.argv   ,  time	Sleep, measure execution time	time.sleep(2)
 json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.findall(r'\d+', text)   ,  statistics	Mean, median, stdev	statistics.mean([1,2,3])
-import sth as sth 
+import sth as sth    ,   from math import sth
 '''
