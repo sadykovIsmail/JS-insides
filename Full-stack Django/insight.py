@@ -76,4 +76,5 @@ A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks
 18) math	Math operations (sqrt, sin, factorial)	math.sqrt(16)    ,   random	Random numbers, shuffling	random.randint(1, 10)  ,  datetime	Dates and times	datetime.datetime.now()
 os	Interact with operating system	os.listdir()   ,   sys	System-level commands and args	sys.argv   ,  time	Sleep, measure execution time	time.sleep(2)
 json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.findall(r'\d+', text)   ,  statistics	Mean, median, stdev	statistics.mean([1,2,3])
+import sth as sth 
 '''
