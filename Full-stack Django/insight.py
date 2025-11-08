@@ -67,7 +67,7 @@ lambda args: expression #small function   list(map(lambda x: x ** 2, numbers))
 dictionary[key] = new value    ,   dictionary.get(key, default)   ,  dic.keys()   ,   dic.values()  #gets values  ,  dic.items() # gets all ,   dic.clear() #clears
 pizza.update({ 'price': 15, 'total_time': 25 })  , student.pop('key', 'default') #gives value removes key  ,  .popitem() #removes and gives the last key and value like tuple
 for key, value in dictionary.items():      ,     for index, product in enumerate(products.items(), 1):
-    dictionary[key] = round(value * 0.8)   ,         print(index, product)
+    dictionary[key] = round(value * 0.8)   ,         print(index, product)   ,  ** from dic to function parameters print(sum(**nums)) # 7
     
 17)Set: set() # empty Set  ,  {} # empty Dictionary  ,   my_set.add(6) #adds  ,  .remove(el) # removes  , .clear() #clears  ,  
 A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks if has NOT in common  ,  | adds tow sets no common  , & returns common
@@ -77,4 +77,6 @@ A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks
 os	Interact with operating system	os.listdir()   ,   sys	System-level commands and args	sys.argv   ,  time	Sleep, measure execution time	time.sleep(2)
 json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.findall(r'\d+', text)   ,  statistics	Mean, median, stdev	statistics.mean([1,2,3])
 import sth as sth    ,   from math import sth
+
+19) re: regex: re.search('p\d+', patient_id, re.IGNORECASE) #checks for p upper_lower case and any number and one or more times   ,   re.fullmatch #checks if onlly this no thing else
 '''
