@@ -79,4 +79,17 @@ json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.finda
 import sth as sth    ,   from math import sth
 
 19) re: regex: re.search('p\d+', patient_id, re.IGNORECASE) #checks for p upper_lower case and any number and one or more times   ,   re.fullmatch #checks if onlly this no thing else
+
+20)def parse_config(filename):
+    try:
+        with open(filename, 'r') as file:
+            data = file.read()
+            return int(data)
+    except FileNotFoundError:
+        raise ValueError('Configuration file is missing') from None
+    except ValueError as e:
+        raise ValueError('Invalid configuration format') from e
+
+config = parse_config('config.txt')
+pdb
 '''
