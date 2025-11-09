@@ -92,4 +92,12 @@ import sth as sth    ,   from math import sth
 
 config = parse_config('config.txt')
 pdb
+
+21) Classes: class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name.upper()} says woof woof! I'm {self.age} years old!")
 '''
