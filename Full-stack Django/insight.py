@@ -93,13 +93,27 @@ import sth as sth    ,   from math import sth
 config = parse_config('config.txt')
 pdb
 
-21) Classes: class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+21) Classes: class Book:
+   def __init__(self, title, pages):
+       self.title = title
+       self.pages = pages
 
-    def bark(self):
-        print(f"{self.name.upper()} says woof woof! I'm {self.age} years old!")
+   def __len__(self):
+       return self.pages
 
+   def __str__(self):
+       return f"'{self.title}' has {self.pages} pages"
 
+   def __eq__(self, other):
+       return self.pages == other.pages
+
+22) Special methods:
+how use:        code in class:              explanation:
+a + b	        __add__(self, other)	   Runs when using + between objects
+str(obj)   	    __str__(self)	           Returns a user-friendly string (for printing)
+repr(obj)	    __repr__(self)         	   Returns an unambiguous developer string (for debugging)
+a == b   	    __eq__(self, other)	       Runs when checking equality ==
+a < b	        __lt__(self, other)	       Runs when comparing less-than <
+for x in obj:	__iter__(self)	           Makes object iterable (returns iterator)
+next(it)	    __next__(self)	           Returns next item from iterator
 '''
