@@ -116,4 +116,10 @@ a == b   	    __eq__(self, other)	       Runs when checking equality ==
 a < b	        __lt__(self, other)	       Runs when comparing less-than <
 for x in obj:	__iter__(self)	           Makes object iterable (returns iterator)
 next(it)	    __next__(self)	           Returns next item from iterator
+
+23) Dynamic attributes:
+getattr(obj, name)	        Get attribute value	             getattr(p, "name")
+setattr(obj, name, value)	Set attribute value	             setattr(p, "age", 30)
+hasattr(obj, name)	        Check if attribute exists	     hasattr(p, "age")
+delattr(obj, name)	        Delete attribute	             delattr(p, "age")
 '''
