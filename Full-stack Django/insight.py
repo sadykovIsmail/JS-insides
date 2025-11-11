@@ -122,5 +122,5 @@ getattr(obj, name)	        Get attribute value	             getattr(p, "name")
 setattr(obj, name, value)	Set attribute value	             setattr(p, "age", 30)
 hasattr(obj, name)	        Check if attribute exists	     hasattr(p, "age")
 delattr(obj, name)	        Delete attribute	             delattr(p, "age")
-aaaaaaaa
+aaaaaaaaa
 '''
