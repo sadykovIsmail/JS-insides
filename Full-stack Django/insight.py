@@ -123,4 +123,8 @@ setattr(obj, name, value)	Set attribute value	             setattr(p, "age", 30)
 hasattr(obj, name)	        Check if attribute exists	     hasattr(p, "age")
 delattr(obj, name)	        Delete attribute	             delattr(p, "age")
 
+24) import datetime 
+now = datetime.datetime.now()
+print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+
 '''
