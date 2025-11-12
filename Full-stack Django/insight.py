@@ -125,6 +125,6 @@ delattr(obj, name)	        Delete attribute	             delattr(p, "age")
 
 24) import datetime 
 now = datetime.datetime.now()
-print(now.strftime("%Y-%m-%d"))  # Output: 2024-03-15 (year-month-day with - separator)
+print(now.strftime("%Y-%m-%d-%H-%M-%S"))  # Output: 2024-03-15 (year-month-day-hour-minute-second with - separator)
 
 '''
