@@ -96,7 +96,7 @@ pdb
 21) Classes: self._balance = balance # internal accessible  with __ not accessible private
 __validate # for validation
 @property # makes method like property of the class
-@<property_name>.setter #for setting values to property
+@<property_name>.setter #for setting values to property and can use # my_circle.radius = 4 # This will call the setter
 class Book:
    def __init__(self, title, pages):
        self.title = title
