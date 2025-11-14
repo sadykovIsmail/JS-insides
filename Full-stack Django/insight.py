@@ -97,6 +97,7 @@ pdb
 __validate # for validation
 @property # makes method like property of the class
 @<property_name>.setter #for setting values to property and can use # my_circle.radius = 4 # This will call the setter
+del my_circle.radius # let you define what happens after deletion
 class Book:
    def __init__(self, title, pages):
        self.title = title
