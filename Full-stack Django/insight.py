@@ -93,7 +93,8 @@ import sth as sth    ,   from math import sth
 config = parse_config('config.txt')
 pdb
 
-21) Classes: self._balance = balance # means that it is accessable from outside of the class
+21) Classes: self._balance = balance # internal accessible  with __ not accessible private
+__validate # for validation
 class Book:
    def __init__(self, title, pages):
        self.title = title
