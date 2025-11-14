@@ -95,6 +95,8 @@ pdb
 
 21) Classes: self._balance = balance # internal accessible  with __ not accessible private
 __validate # for validation
+@property # makes method like property of the class
+@<property_name>.setter #for setting values to property
 class Book:
    def __init__(self, title, pages):
        self.title = title
