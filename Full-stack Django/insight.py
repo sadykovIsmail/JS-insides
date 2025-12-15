@@ -156,34 +156,61 @@ print(frog.introduce())
 base = super().sound() means:
 #Call the parent class’s sound() method and save its result.
 
-26) Polymorphism:
+26)
+# ==============================
+# 1️⃣ Regular Polymorphism
+# Different classes, same method name, different behavior
+# ==============================
 
-# Define a Cat class
 class Cat:
-    # Cat has a method called 'speak'
     def speak(self):
-        return "Meow"  # Returns the sound a cat makes
+        return "Meow"  # Cat sound
 
-# Define a Dog class
 class Dog:
-    # Dog also has a method called 'speak'
     def speak(self):
-        return "Woof"  # Returns the sound a dog makes
+        return "Woof"  # Dog sound
 
-# Define a function that can take any animal
 def make_sound(animal):
-    # Call the 'speak' method of the object passed
-    # This works for Cat, Dog, or any class that has a 'speak' method
+    # Works with any object that has a .speak() method
     print(animal.speak())
 
-# Call make_sound with a Cat object
 make_sound(Cat())  # Output: Meow
-
-# Call make_sound with a Dog object
 make_sound(Dog())  # Output: Woof
 
-# ✅ This demonstrates polymorphism:
-# The same function make_sound() can work with different objects,
-# and each object responds in its own way.
+# ✅ Concept: One function, many behaviors depending on the object
+
+# ==============================
+# 2️⃣ Inheritance-based Polymorphism
+# Parent defines method, children override it
+# ==============================
+
+class Animal:
+    def speak(self):
+        return "Some generic sound"  # Default parent method
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow"  # Child override
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof"  # Child override
+
+class Monkey(Animal):
+    def speak(self):
+        return "Ooh ooh aah aah"  # Child override
+
+animals = [Cat(), Dog(), Monkey()]
+
+for animal in animals:
+    # Same method name, different child behavior
+    print(animal.speak())
+
+# Output:
+# Meow
+# Woof
+# Ooh ooh aah aah
+
+
 
 '''
