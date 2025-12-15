@@ -155,4 +155,35 @@ print(frog.introduce())
 
 base = super().sound() means:
 #Call the parent class’s sound() method and save its result.
+
+26) Polymorphism:
+
+# Define a Cat class
+class Cat:
+    # Cat has a method called 'speak'
+    def speak(self):
+        return "Meow"  # Returns the sound a cat makes
+
+# Define a Dog class
+class Dog:
+    # Dog also has a method called 'speak'
+    def speak(self):
+        return "Woof"  # Returns the sound a dog makes
+
+# Define a function that can take any animal
+def make_sound(animal):
+    # Call the 'speak' method of the object passed
+    # This works for Cat, Dog, or any class that has a 'speak' method
+    print(animal.speak())
+
+# Call make_sound with a Cat object
+make_sound(Cat())  # Output: Meow
+
+# Call make_sound with a Dog object
+make_sound(Dog())  # Output: Woof
+
+# ✅ This demonstrates polymorphism:
+# The same function make_sound() can work with different objects,
+# and each object responds in its own way.
+
 '''
