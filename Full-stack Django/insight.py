@@ -212,5 +212,16 @@ for animal in animals:
 # Ooh ooh aah aah
 
 
+27)class MediaError(Exception): # costumize error from build in class method Exception
 
+28) from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod # makes method required to all subclasses
+    def make_sound(self):
+        pass 
+        
+        
+29) import random
+ return random.choice([])
 '''
