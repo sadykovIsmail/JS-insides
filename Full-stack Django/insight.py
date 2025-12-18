@@ -69,10 +69,31 @@ pizza.update({ 'price': 15, 'total_time': 25 })  , student.pop('key', 'default')
 for key, value in dictionary.items():      ,     for index, product in enumerate(products.items(), 1):
     dictionary[key] = round(value * 0.8)   ,         print(index, product)   ,  ** from dic to function parameters print(sum(**nums)) # 7
     
-17)Set: set() # empty Set  ,  {} # empty Dictionary  ,   my_set.add(6) #adds  ,  .remove(el) # removes  , .clear() #clears  ,  
-A.issubset(B) #A ⊆ B  ,   A.issuperset(B)  #A ⊇ B   ,  .isdisjoint() #checks if has NOT in common  ,  | adds tow sets no common  , & returns common
- A - B #returns element form A arenot in B  ,  ^ returns unique elements ,  
- 
+17)set()              # creates an empty set
+{}                 # creates an empty dictionary (NOT a set)
+
+s.add(x)           # adds element x to the set
+s.remove(x)        # removes x (raises error if x not found)
+s.discard(x)       # removes x (NO error if x not found)
+s.pop()            # removes and returns an arbitrary element
+s.clear()          # removes all elements from the set
+
+x in s             # checks if x exists in the set (True / False)
+
+A | B              # union → all elements from both sets (no duplicates)
+A & B              # intersection → elements common to both sets
+A - B              # difference → elements in A but NOT in B
+A ^ B              # symmetric difference → elements in A or B, but not both
+
+A.union(B)         # union (method form)
+A.intersection(B)  # intersection (method form)
+A.difference(B)    # difference (method form)
+A.symmetric_difference(B)  # symmetric difference (method form)
+
+A.issubset(B)      # checks if A ⊆ B
+A.issuperset(B)    # checks if A ⊇ B
+A.isdisjoint(B)    # checks if A and B have NO elements in common
+
 18) math	Math operations (sqrt, sin, factorial)	math.sqrt(16)    ,   random	Random numbers, shuffling	random.randint(1, 10)  ,  datetime	Dates and times	datetime.datetime.now()
 os	Interact with operating system	os.listdir()   ,   sys	System-level commands and args	sys.argv   ,  time	Sleep, measure execution time	time.sleep(2)
 json	Read/write JSON files	json.dumps(data)   ,  re	Regular expressions	re.findall(r'\d+', text)   ,  statistics	Mean, median, stdev	statistics.mean([1,2,3])
