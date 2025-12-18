@@ -224,4 +224,8 @@ class Animal(ABC):
         
 29) import random
  return random.choice([])
+ 
+30) Data structures:
+Stacks: like dish last removes first, Push: adding, POP: removing
+Queues: like queues first come first leave , Enqueue: adding to back , Deque: removing first
 '''
