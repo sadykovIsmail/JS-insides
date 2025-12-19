@@ -247,6 +247,6 @@ class Animal(ABC):
  return random.choice([])
  
 30) Data structures:
-Stacks: like dish last removes first, Push: adding, POP: removing
+Stacks: like dish last removes first, Push: adding, POP: removing, peek: return the last element
 Queues: like queues first come first leave , Enqueue: adding to back , Deque: removing first
 '''
