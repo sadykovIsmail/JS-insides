@@ -249,4 +249,21 @@ class Animal(ABC):
 30) Data structures:
 Stacks: like dish last removes first, Push: adding, POP: removing, peek: return the last element
 Queues: like queues first come first leave , Enqueue: adding to back , Deque: removing first
+
+31) Binary search:
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2  
+
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return -1
 '''
