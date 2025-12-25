@@ -40,8 +40,8 @@ global my_var_2  # Makes it globally usable or can change the global var inside 
 10) "and",  "or",  "not" operators   ,  range(start, stop, step)
 
 11)del developer[1] #deletes the item index 1 from developer
-
-12)List: developer = ['Alice', 34, 'Rust Developer'] unpacking name, age, job = developer
+        
+12)Lists: developer = ['Alice', 34, 'Rust Developer'] unpacking name, age, job = developer
 developer[2][1] # inside the nested list  ,  name, *rest = developer # rest == rest of after 1st el.
 append() # adds element to last   ,   extend() # adds elements from list to list    ,   numbers.insert(2, 2.5)
 .remove(el) # removes el    ,   .pop(index) # removes at index and returns value if not index return last and removes   ,    clear() #clears   ,   sort() #in place sort 
