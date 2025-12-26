@@ -217,4 +217,7 @@
 4) ALTER TABLE or DATABASE table_name RENAME COLUMN column_name TO new_name; # how to rename
 
 5) DROP TABLE table_name , DROP DATABASE db_name;
+
+6) ALTER TABLE table_name ADD PRIMARY KEY(column_name);
+
 """
