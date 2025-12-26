@@ -208,13 +208,13 @@
 -- selects the most population in each continentxs
 
 """
-1) ALTER TABLE table_name ADD COLUMN column_name DATA_TYPE;  # to add column
+1) ALTER TABLE table_name ADD COLUMN column_name DATA_TYPE=SERIAL #makes good;  # to add column
 
 2) ALTER TABLE table_name DROP COLUMN column_name;
 
-3) \d # displays tables \d table_name # displays items of table_name
+3) \l # shows lists, \d # displays tables, \d table_name # displays items of table_name   ,   \c db_name; # connects 
 
-4) ALTER TABLE table_name RENAME COLUMN column_name TO new_name; # how to rename
+4) ALTER TABLE or DATABASE table_name RENAME COLUMN column_name TO new_name; # how to rename
 
-
+5) DROP TABLE table_name , DROP DATABASE db_name;
 """
