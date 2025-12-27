@@ -220,4 +220,10 @@
 
 6) ALTER TABLE table_name ADD PRIMARY KEY(column_name);
 
+7)ALTER TABLE table_name ADD COLUMN column_name DATATYPE REFERENCES referenced_table_name(referenced_column_name);
+
+8)ALTER TABLE table_name ADD UNIQUE(column_name);
+
+9)ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
+
 """
