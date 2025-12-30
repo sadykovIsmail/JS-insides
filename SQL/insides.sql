@@ -208,7 +208,8 @@
 -- selects the most population in each continentxs
 
 """
-1) ALTER TABLE table_name ADD COLUMN column_name DATA_TYPE=SERIAL #makes good;  # to add column
+1) ALTER TABLE table_name ADD COLUMN column_name DATATYPE CONSTRAINT REFERENCES referenced_table_name(referenced_column_name);
+ #makes good;  # to add column
 
 2) ALTER TABLE table_name DROP COLUMN column_name;
 
@@ -226,4 +227,16 @@
 
 9)ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL;
 
+10)CREATE TABLE table_name(column_name DATATYPE CONSTRAINTS);
+
+11)ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES referenced_table(referenced_column);
+ 
+12)SELECT columns FROM junction_table
+FULL JOIN table_1 ON junction_table.foreign_key_column = table_1.primary_key_column
+FULL JOIN table_2 ON junction_table.foreign_key_column = table_2.primary_key_column;
+
 """
+sudo service postgresql start
+
+psql --username=freecodecamp --dbname=postgres
+\c mario_database
