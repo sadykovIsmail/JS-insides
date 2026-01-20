@@ -1,5 +1,7 @@
 """
-    1)python -m django startproject blog
-
-    
+1) start project:
+python -m venv myenv
+myenv\Scripts\activate
+pip install django
+django-admin startproject myproject
     """
