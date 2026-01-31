@@ -4,7 +4,7 @@ python -m venv myenv                # create a virtual environment
 myenv\Scripts\activate              # activate venv (Windows)
 pip install django                   # install Django locally
 django-admin startproject myproject .  # create Django project in current folder (dot is important!)
-python manage.py runserver           # run local development server
+python manage.py runserver  or command         # run local development server
 
 # 2️⃣ Docker / Docker Compose Basics
 docker build .                       # build Docker image from Dockerfile
