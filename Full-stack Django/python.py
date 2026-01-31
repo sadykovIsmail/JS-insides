@@ -30,7 +30,7 @@ str.maketrans(from, to) #builds mapping  ,  string.translate(mapping) applies th
 
 7) Integers and Floats: print(type(my_int_1)) # <class 'int'>  ,  my_float_2 % my_float_1 #will return the remainder of division
 print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int() , float()  , round(my_int_2, 1) # rounds to 1 decimal places  , abs(-15) #15 
- bin(my_int) # base of 2  , oct(int) # base of 8 , hex(int) # base of 16
+ bin(my_int) # base of 2  , oct(int) # base of 8 , hex(int) # base of 16 ,  a ^ a = 0
  
 8) Scope: LEGB  , nonlocal res  # Allow modification of an enclosing variable
 global my_var_2  # Makes it globally usable or can change the global var inside function
@@ -45,7 +45,7 @@ global my_var_2  # Makes it globally usable or can change the global var inside 
 developer[2][1] # inside the nested list  ,  name, *rest = developer # rest == rest of after 1st el.
 append() # adds element to last   ,   extend() # adds elements from list to list    ,   numbers.insert(2, 2.5)
 .remove(el) # removes el    ,   .pop(index) # removes at index and returns value if not index return last and removes   ,    clear() #clears   ,   sort() #in place sort 
-.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index
+.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index  , copy() #copies list
 
 13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,  
 .sorted(iterable, key=None, reverse=False) # returns new list
@@ -63,7 +63,7 @@ result = ['Even' if num % 2 == 0 else 'Odd' for num in numbers]  # with even inc
 filter(function, iterable)   # filters   ,    map(function, iterable)  # changes each    ,   sum(iterable, start=0) #sums
 lambda args: expression #small function   list(map(lambda x: x ** 2, numbers))
 
-16) Dictionaries: pizza = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
+16) Dictionaries: dictionary = dict() #create pizza = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
 dictionary[key] = new value    ,   dictionary.get(key, default)   ,  dic.keys()   ,   dic.values()  #gets values  ,  dic.items() # gets all ,   dic.clear() #clears, del dic[key]
 pizza.update({ 'price': 15, 'total_time': 25 })  , student.pop('key', 'default') #gives value removes key  ,  .popitem() #removes and gives the last key and value like tuple
 for key, value in dictionary.items():      ,     for index, product in enumerate(products.items(), 1):
