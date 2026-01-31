@@ -23,4 +23,8 @@ python manage.py migrate              # apply database migrations
 python manage.py createsuperuser      # create admin user
 python manage.py runserver 0.0.0.0:8000  # run server in container and expose to host
 
+#to run through docker:
+docker-compose run --rm app sh -c "python manage.py test"
+
+
     """
