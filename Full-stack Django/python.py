@@ -30,7 +30,7 @@ str.maketrans(from, to) #builds mapping  ,  string.translate(mapping) applies th
 
 7) Integers and Floats: print(type(my_int_1)) # <class 'int'>  ,  my_float_2 % my_float_1 #will return the remainder of division
 print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int() , float()  , round(my_int_2, 1) # rounds to 1 decimal places  , abs(-15) #15 
- bin(my_int) # base of 2  , oct(int) # base of 8 , hex(int) # base of 16 ,  a ^ a = 0
+ bin(my_int) # base of 2  , oct(int) # base of 8 , hex(int) # base of 16 ,  a ^ a = 0  , list(str(int)) # to split
  
 8) Scope: LEGB  , nonlocal res  # Allow modification of an enclosing variable
 global my_var_2  # Makes it globally usable or can change the global var inside function
