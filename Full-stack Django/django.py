@@ -30,4 +30,7 @@ docker-compose run --rm app sh -c "python manage.py test"
  python manage.py makemigrations
  migrate
 
+ #to check db
+ docker volume ls
+
     """
