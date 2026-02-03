@@ -45,7 +45,7 @@ global my_var_2  # Makes it globally usable or can change the global var inside 
 developer[2][1] # inside the nested list  ,  name, *rest = developer # rest == rest of after 1st el.
 append() # adds element to last   ,   extend() # adds elements from list to list    ,   numbers.insert(2, 2.5)
 .remove(el) # removes el    ,   .pop(index) # removes at index and returns value if not index return last and removes   ,    clear() #clears   ,   sort() #in place sort 
-.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index  , copy() #copies list
+.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index  , copy() #copies list,  list(set(lst)) # to del duplicate
 
 13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,  
 .sorted(iterable, key=None, reverse=False) # returns new list
@@ -67,7 +67,7 @@ lambda args: expression #small function   list(map(lambda x: x ** 2, numbers))
 dictionary[key] = new value    ,   dictionary.get(key, default)   ,  dic.keys()   ,   dic.values()  #gets values  ,  dic.items() # gets all ,   dic.clear() #clears, del dic[key]
 pizza.update({ 'price': 15, 'total_time': 25 })  , student.pop('key', 'default') #gives value removes key  ,  .popitem() #removes and gives the last key and value like tuple
 for key, value in dictionary.items():      ,     for index, product in enumerate(products.items(), 1):
-    dictionary[key] = round(value * 0.8)   ,         print(index, product)   ,  ** from dic to function parameters print(sum(**nums)) # 7  ,  key = next(k for k, v in data.items() if v == value) #to find key with value
+    dictionary[key] = round(value * 0.8)   ,         print(index, product)   ,  ** from dic to function parameters print(sum(**nums)) # 7  ,  key = (k for k, v in data.items() if v == value) #to find key with value
     
 17)set()              # creates an empty set
 {}                 # creates an empty dictionary (NOT a set)
