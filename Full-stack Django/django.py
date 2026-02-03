@@ -26,5 +26,8 @@ python manage.py runserver 0.0.0.0:8000  # run server in container and expose to
 #to run through docker:
 docker-compose run --rm app sh -c "python manage.py test"
 
+#migrations
+ python manage.py makemigrations
+ migrate
 
     """

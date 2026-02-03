@@ -23,10 +23,10 @@ str + int = typeError  ,  print(f'The sum of {num1} and {num2} is {num1 + num2}'
 hello world  print(my_str[-2]) # l  , sentence[start:stop] # start included stop excluded  , print(my_str[8:])  # rld  , print(my_str[0:11:2])  # Hlowrd   , print(my_str[::-1]) # dlrow olleH
 print('Hello' in my_str)  # True
 
-6) actions for strings: .upper() #uppercase , .lower(), .strip() #removes space bef or aft  , my_str.replace('hello', 'hi')  , split() splits to the list,,
+6) actions for strings: .upper() #uppercase , .lower(), .strip() #removes space bef or aft  , my_str.replace('hello', 'hi')  , split() splits to the list by space,,
 join(list),  .startswith('hello') #checks  , .endswith('world') #checks , .find('world') # 6 , .count('o') # 2  , .capitalize() #capitalizes  ,  .isupper() # checks 
 .islower() # checks  ,  .title('hello world') # Hello World  , bool() #checks truthy or falsly
-str.maketrans(from, to) #builds mapping  ,  string.translate(mapping) applies that translate  , str in text # checks for existance
+str.maketrans(from, to) #builds mapping  ,  string.translate(mapping) applies that translate  , str in text # checks for existance  , list(str) #splits by characters
 
 7) Integers and Floats: print(type(my_int_1)) # <class 'int'>  ,  my_float_2 % my_float_1 #will return the remainder of division
 print(5.8 // 2)  # 5.8 ÷ 2 = 2.9  ,  pow(2, 3)  # same as 2 ** 3 → 8  ,  int() , float()  , round(my_int_2, 1) # rounds to 1 decimal places  , abs(-15) #15 
@@ -46,6 +46,7 @@ developer[2][1] # inside the nested list  ,  name, *rest = developer # rest == r
 append() # adds element to last   ,   extend() # adds elements from list to list    ,   numbers.insert(2, 2.5)
 .remove(el) # removes el    ,   .pop(index) # removes at index and returns value if not index return last and removes   ,    clear() #clears   ,   sort() #in place sort 
 .sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index  , copy() #copies list,  list(set(lst)) # to del duplicate
+next((k for k, v in enumerate(example) if v == 'b')) # to find by value
 
 13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,  
 .sorted(iterable, key=None, reverse=False) # returns new list
