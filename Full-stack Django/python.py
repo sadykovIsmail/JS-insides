@@ -292,4 +292,21 @@ def merge_sort(arr):
     sorted_list.extend(right[j:])
 
     return sorted_list
+
+
+33) Mixed operations 
+# Min, Max, Sum, Len
+# -------------------------------
+print(min(numbers))           # 2
+print(max(numbers))           # 9
+print(sum(numbers))           # 24
+print(len(numbers))           # 5
+print(len(mixed_tuple))       # 3
+
+# -------------------------------
+# All / Any
+# -------------------------------
+print(all(n>0 for n in numbers))   # True -> all numbers >0
+print(any(n>8 for n in numbers))   # True -> any number >8
+
 '''
