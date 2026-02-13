@@ -22,6 +22,7 @@ django-admin startproject app .       # create Django project inside container
 python manage.py migrate              # apply database migrations
 python manage.py createsuperuser      # create admin user
 python manage.py runserver 0.0.0.0:8000  # run server in container and expose to host
+python manage.py startapp appName   #starts app
 
 #to run through docker:
 docker-compose run --rm app sh -c "python manage.py test"
@@ -33,4 +34,15 @@ docker-compose run --rm app sh -c "python manage.py test"
  #to check db
  docker volume ls
 
+ 4) set up posgresql database:
+ DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',   # PostgreSQL backend
+        'HOST': os.environ.get('DB_HOST'),           # Database host (Docker service name)
+        'NAME': os.environ.get('DB_NAME'),           # Database name
+        'USER': os.environ.get('DB_USER'),           # Database user
+        'PASSWORD': os.environ.get('DB_PASS'),       # Database password
+        # PORT not required (defaults to 5432)
+    }
+}
     """
