@@ -17,7 +17,9 @@ docker-compose run --rm app sh -c "command"  # run one-time command in container
 # Tips:
 # --rm  -> remove container after it exits
 # sh -c "command" -> allows shell commands inside container
-
+1) docker-up
+2) migrate
+3) runserver
 # 3️⃣ Django Commands (inside container or local)
 django-admin startproject app .       # create Django project inside container
 python manage.py migrate              # apply database migrations
@@ -105,7 +107,7 @@ urlpatterns += [
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema')),
 ]
 
- 6) requirements.txt
+ 7) requirements.txt
 # freeze to requirements
 pip freeze > requirements.txt
 
