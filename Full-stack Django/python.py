@@ -83,7 +83,7 @@ x in s             # checks if x exists in the set (True / False)
 
 A | B              # union → all elements from both sets (no duplicates)
 A & B              # intersection → elements common to both sets
-A - B              # difference → elements in A but NOT in B
+A - B  d            # difference → elements in A but NOT in B
 A ^ B              # symmetric difference → elements in A or B, but not both
 
 A.union(B)         # union (method form)
