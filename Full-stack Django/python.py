@@ -309,5 +309,5 @@ print(len(mixed_tuple))       # 3
 # -------------------------------
 print(all(n>0 for n in numbers))   # True -> all numbers >0
 print(any(n>8 for n in numbers))   # True -> any number >8
-dd
+
 '''
