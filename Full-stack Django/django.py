@@ -13,6 +13,7 @@ docker-compose build                  # build all services from docker-compose.y
 docker-compose up                     # start containers and run commands defined in compose
 docker-compose down                   # stop and remove containers
 docker-compose run --rm app sh -c "command"  # run one-time command in container (e.g., startproject)
+docker compose exec web python manage.py createsuperuser  # works when the server running
 
 # Tips:
 # --rm  -> remove container after it exits
