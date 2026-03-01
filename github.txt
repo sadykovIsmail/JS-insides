@@ -34,7 +34,11 @@ build: add Docker configuration
 ci: add GitHub Actions workflow for tests
 # automated tests run on push
 
-feat(notes): add image upload endpoint (#12)
+feat(notes): add image upload endpoint (#12) or
+Closes #4
+Fixes #4
+Resolves #4
+
 # commit related to issue 12
 # GitHub links them automatically
 
