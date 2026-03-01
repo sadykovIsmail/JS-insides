@@ -1,0 +1,2 @@
+to create branch
+ git checkout -b feature/note-image-upload
