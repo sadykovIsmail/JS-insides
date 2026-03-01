@@ -115,5 +115,72 @@ pip freeze > requirements.txt
 #install from requirements
 pip install -r requirements.txt
 
+ 8) image upload feature
+1) install pillow : Pillow==10.4.0
+2) add image to models
+3) add media to settings
+  MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+4)
+# views.py
+
+# Import 1: needed to parse file uploads
+from rest_framework.parsers import MultiPartParser, FormParser
+
+# Import 2: needed for the custom endpoint
+from rest_framework.decorators import action
+
+# Import 3: needed to fix Swagger UI showing the file picker
+from drf_spectacular.utils import extend_schema
+
+
+class BlogPostViews(viewsets.ModelViewSet):
+    ...
+
+    # Part A — switch serializer class based on the action
+    def get_serializer_class(self):
+        if self.action == "upload_image":
+            return PostImageSerializer
+        return self.serializer_class
+
+    # Part B — fix Swagger UI (without this it shows text box instead of file picker)
+    @extend_schema(
+        request={
+            "multipart/form-data": {
+                "type": "object",
+                "properties": {
+                    "image": {"type": "string", "format": "binary"}
+                },
+                "required": ["image"],
+            }
+        }
+    )
+    # Part C — the actual custom endpoint
+    @action(
+        methods=["POST"],
+        detail=True,              # True means /notes/{id}/upload-image/ (needs an ID)
+        url_path="upload-image",  # the URL segment after the ID
+        parser_classes=[MultiPartParser, FormParser],  # handles file data
+    )
+    def upload_image(self, request, pk=None):
+        post = self.get_object()                        # fetch the object by pk
+        serializer = self.get_serializer(post, data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+# in urls.py
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [...] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+#for nginx
+location /media/ {
+    alias /app/media/;
+}
 
     """
