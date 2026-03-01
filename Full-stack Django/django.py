@@ -121,7 +121,15 @@ pip install -r requirements.txt
 3) add media to settings
   MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
-4)
+4) create serializer
+# serializers.py
+class PostImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BlogPostModel
+        fields = ['id', 'image']
+        read_only_fields = ['id']
+
+5) add to views
 # views.py
 
 # Import 1: needed to parse file uploads
