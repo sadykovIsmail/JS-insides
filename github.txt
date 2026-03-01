@@ -1,2 +1,47 @@
-to create branch
+
+ 1) writing commits:
+type(scope): short description
+
+feat(auth): implement JWT authentication
+# new authentication feature
+
+fix(auth): correct token expiration logic
+# authentication bug fixed
+
+docs: update README installation steps
+# documentation improvement
+
+refactor(notes): simplify image validation logic
+# code cleanup
+# functionality stays the same
+
+style: format code using black
+# formatting change only
+# no logic change
+
+test(notes): add tests for image upload endpoint
+# automated tests added
+
+chore: add pillow dependency for image uploads
+# installing library
+
+perf(notes): optimize note query using select_related
+# improves database performance
+
+build: add Docker configuration
+# project can run inside Docker
+
+ci: add GitHub Actions workflow for tests
+# automated tests run on push
+
+feat(notes): add image upload endpoint (#12)
+# commit related to issue 12
+# GitHub links them automatically
+
+2) to create branch
  git checkout -b feature/note-image-upload
+
+3) switch branch
+git checkout main
+
+
