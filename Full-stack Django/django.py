@@ -191,4 +191,40 @@ location /media/ {
     alias /app/media/;
 }
 
+9) write tests:
+from django.test import TestCase
+from django.contrib.auth import get_user_model
+from django.urls import reverse
+
+from rest_framework.test import APIClient
+from rest_framework import status
+
+from .models import YourModel
+
+User = get_user_model()
+
+
+# ── Helper functions (create objects without repeating yourself) ──
+def create_user(username="testuser", password="testpass123"):
+    return User.objects.create_user(username=username, password=password)
+
+
+# ── URL shortcuts (figure out the name once, reuse everywhere) ──
+YOUR_LIST_URL = reverse("yourmodel-list")
+
+
+# ── Test class (one class per endpoint group) ──
+class YourViewTests(TestCase):
+
+    def setUp(self):              # runs BEFORE every test
+        self.client = APIClient()
+        self.user = create_user()
+        self.client.force_authenticate(user=self.user)
+
+    def test_something(self):
+        res = self.client.get(YOUR_LIST_URL)
+        self.assertEqual(res.status_code, status.HTTP_200_OK)
+
+
+10)
     """
