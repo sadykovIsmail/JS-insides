@@ -226,5 +226,5 @@ class YourViewTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
 
 
-10)
+10) reverse(<basename or model name in small letters>-<action means -list # get, -detail # gets detail,  >) # generates url
     """
