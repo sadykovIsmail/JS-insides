@@ -48,4 +48,43 @@ Resolves #4
 3) switch branch
 git checkout main
 
+4) creating branches :
+# 1) Branch naming
+
+feature/<feature-name>
+# new functionality
+
+fix/<bug-name>
+# fixing a bug
+
+test/<feature>
+# writing or improving tests
+
+refactor/<module>
+# restructuring code without changing behavior
+
+docs/<topic>
+# documentation changes
+
+chore/<task>
+# maintenance tasks (dependencies, configs)
+
+ci/<task>
+# CI/CD pipelines
+
+perf/<feature>
+# performance improvements
+
+
+Examples:
+
+feature/note-image-upload
+fix/jwt-expiration
+test/note-api
+refactor/auth-logic
+docs/api-setup
+chore/update-dependencies
+ci/github-actions-tests
+perf/query-optimization
+
 
