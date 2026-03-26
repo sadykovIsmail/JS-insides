@@ -45,7 +45,7 @@ global my_var_2  # Makes it globally usable or can change the global var inside 
 developer[2][1] # inside the nested list  ,  name, *rest = developer # rest == rest of after 1st el.
 append() # adds element to last   ,   extend() # adds elements from list to list    ,   numbers.insert(2, 2.5)
 .remove(el) # removes el    ,   .pop(index) # removes at index and returns value if not index return last and removes   ,    clear() #clears   ,   sort() #in place sort
-.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  index(item) # founds the items first index  , copy() #copies list,  list(set(lst)) # to del duplicate
+.sorted() #returns sorted list   ,   .reverse() # in place reverse   ,  .index(item) # founds the items first index  , copy() #copies list,  list(set(lst)) # to del duplicate
 next((k for k, v in enumerate(example) if v == 'b')) # to find by value
 
 13) Tuple: unpacking, slice, same list  ,  .count(el) #counts el  ,  index(el , start, end) # index of el  ,
